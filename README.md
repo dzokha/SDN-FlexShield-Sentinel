@@ -60,3 +60,14 @@ Sau khi cài đặt thành công, giao diện tiện ích sẽ hiển thị như
 - Nền tảng: **Google Chrome Extension**
 - Mục tiêu: Nghiên cứu và triển khai giải pháp giám sát, hỗ trợ bảo mật trong SDN
 
+
+## 🧭 Kiến trúc hệ sinh thái SDN-FlexShield Defender
+
+- **SDN-FlexShield Defender**
+  - **SDN-FlexShield-Sentinel** – Plugin giám sát & cảnh báo phía người dùng
+  - **SDN-FlexShield-Console** – Ứng dụng Desktop cho SOC & quản trị
+  - **SDN-FlexShield-Enforcer** – Module Router / SDN Controller
+  - **SDN-FlexShield-Core** – Server / Backend trung tâm
+  - **SDN-FlexShield-HoneyCore** – Honeynet & Deception
+  - **SDN-FlexShield-AegisAI** – AI Engine phân tích & dự đoán
+  - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
