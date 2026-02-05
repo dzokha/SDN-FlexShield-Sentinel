@@ -16,9 +16,7 @@ Sentinel không chỉ kiểm tra giao thức bảo mật thông thường mà c�
 * **6. DOM Script:** Giám sát các hành vi chuyển hướng tự động (Redirect) và các cửa sổ Pop-up giả mạo.
 * **7. Language:** Nhận diện các từ khóa thao túng tâm lý (ví dụ: "khóa tài khoản", "khẩn cấp").
 
-
-
-Hướng dẫn cài đặt
+# Hướng dẫn cài đặt
 Để triển khai Sentinel trên trình duyệt Chrome, hãy thực hiện theo các bước sau:
 
 ## Bước 1: Chuẩn bị mã nguồn
@@ -58,20 +56,10 @@ Sau khi cài đặt thành công, giao diện tiện ích sẽ hiển thị như
 
 ![Giao diện SDN-FlexShield-Sentinel](images/giaodien.png)
 
-
----
-
-## 4. Ghi chú
-- Tiện ích hoạt động tốt nhất trên các phiên bản Google Chrome mới
-- Phù hợp cho mục đích học tập, nghiên cứu và thử nghiệm các mô hình an ninh SDN
-
-
-
 # Cơ sở khoa học
 Dự án được xây dựng dựa trên bài báo khoa học:
 
 "Nhận thức an ninh mạng: Từ nhận biết đến hành động an toàn trong chuyển đổi số" > Nhóm tác giả: Nguyễn Văn Kha, Nguyễn Hoàng Phương, Lê Quyết Thắng.
-
 
 # Kiến trúc Hệ sinh thái SDN-FlexShield Defender
 Sentinel là một thành phần trong mô hình bảo mật đa lớp:
