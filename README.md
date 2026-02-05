@@ -4,8 +4,6 @@ SDN-FlexShield: Sentinel is a browser extension aimed at enhancing end-user cybe
 
 # Core Features
 
-Sentinel không chỉ kiểm tra giao thức bảo mật thông thường mà còn phân tích sâu trang web dựa trên 7 dấu hiệu nhận diện trang web giả mạo (theo nghiên cứu tại Cần Thơ)
-
 ### Seven-Indicator Detection Framework
 
 * **1. Domain:** Analyzes domain name structures to detect typosquatting and the use of raw IP addresses instead of legitimate domain names.
