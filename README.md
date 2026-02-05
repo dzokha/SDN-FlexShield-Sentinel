@@ -81,7 +81,7 @@ Sentinel là một thành phần trong mô hình bảo mật đa lớp:
 - **Giấy phép:** Dự án này được cấp phép theo tiêu chuẩn **MIT License**.
 - **Đóng góp:** Mọi Pull Request đều được chào đón nhằm nâng cao khả năng nhận diện mối đe dọa.
 
---
+---
 
 *Phát triển bởi đội ngũ **SDN-FlexShield Defender** – Vì một môi trường số an toàn hơn.*
 
