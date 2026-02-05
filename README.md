@@ -44,7 +44,7 @@ Thực hiện các bước sau để cài đặt tiện ích dưới dạng **Ex
 
 Sau khi cài đặt thành công, giao diện tiện ích sẽ hiển thị như hình bên dưới:
 
-![Giao diện SDN-FlexShield-Sentinel](image/giaodien.png)
+![Giao diện SDN-FlexShield-Sentinel](images/giaodien.png)
 
 
 ---
