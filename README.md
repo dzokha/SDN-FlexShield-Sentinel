@@ -29,9 +29,6 @@ https://github.com/dzokha/SDN-FlexShield-Sentinel
 
 Sau khi tải về, giải nén thư mục dự án với tên: SDN-FlexShield-Sentinel
 
-
----
-
 ## 2. Cài đặt tiện ích trên Google Chrome
 
 Thực hiện các bước sau để cài đặt tiện ích dưới dạng **Extension không đóng gói**:
@@ -54,8 +51,6 @@ Thực hiện các bước sau để cài đặt tiện ích dưới dạng **Ex
 - Nhấn vào biểu tượng **Extensions** trên thanh công cụ
 - Ghim (**Pin**) tiện ích **SDN-FlexShield-Sentinel** để dễ sử dụng
 
----
-
 
 ## 3. Kết quả
 
@@ -77,7 +72,6 @@ Dự án được xây dựng dựa trên bài báo khoa học:
 
 "Nhận thức an ninh mạng: Từ nhận biết đến hành động an toàn trong chuyển đổi số" > Nhóm tác giả: Nguyễn Văn Kha, Nguyễn Hoàng Phương, Lê Quyết Thắng.
 
-Dự án áp dụng mô hình nhận thức tình huống của Endsley (1995) để chuyển hóa các chỉ số kỹ thuật thành cảnh báo trực quan, giúp người dùng ra quyết định an toàn.
 
 # Kiến trúc Hệ sinh thái SDN-FlexShield Defender
 Sentinel là một thành phần trong mô hình bảo mật đa lớp:
