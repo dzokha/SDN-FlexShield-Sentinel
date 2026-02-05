@@ -65,7 +65,7 @@ Sau khi cài đặt thành công, giao diện tiện ích sẽ hiển thị như
 - Tiện ích hoạt động tốt nhất trên các phiên bản Google Chrome mới
 - Phù hợp cho mục đích học tập, nghiên cứu và thử nghiệm các mô hình an ninh SDN
 
----
+
 
 # Cơ sở khoa học
 Dự án được xây dựng dựa trên bài báo khoa học:
@@ -84,6 +84,8 @@ Sentinel là một thành phần trong mô hình bảo mật đa lớp:
   - **SDN-FlexShield-HoneyCore** – Honeynet & Deception
   - **SDN-FlexShield-AegisAI** – AI Engine phân tích & dự đoán
   - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
+  
+---
 
 # Đóng góp & Bản quyền
 
@@ -91,7 +93,7 @@ Sentinel là một thành phần trong mô hình bảo mật đa lớp:
 - **Giấy phép:** Dự án này được cấp phép theo tiêu chuẩn **MIT License**.
 - **Đóng góp:** Mọi Pull Request đều được chào đón nhằm nâng cao khả năng nhận diện mối đe dọa.
 
----
+--
 
 *Phát triển bởi đội ngũ **SDN-FlexShield Defender** – Vì một môi trường số an toàn hơn.*
 
