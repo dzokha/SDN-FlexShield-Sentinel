@@ -65,4 +65,52 @@
       width: 100%;
       margin-top: 10px;
       font-size: 12px;
-      padding:
+      padding: 8px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: 500;
+    }
+    .secure { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
+    .insecure { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
+    
+    .footer {
+      margin-top: 15px;
+      font-size: 10px;
+      color: #bdc3c7;
+      text-align: center;
+      line-height: 1.4;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="images/logo.png" alt="SDN-FlexShield Logo">
+    </div>
+
+    <div class="header">SDN-FlexShield: Sentinel</div>
+    
+    <div class="info-box">
+      <div class="info">
+        <div class="label">Mục tiêu Giám sát (Domain):</div>
+        <div id="domain" class="value">Đang quét...</div>
+      </div>
+
+      <div class="info">
+        <div class="label">Địa chỉ IP Định danh:</div>
+        <div id="ip" class="value">Đang tra cứu...</div>
+      </div>
+      
+      <div id="status">Phân tích giao thức...</div>
+    </div>
+
+    <div class="footer">
+      Thành phần giám sát IDS thực tế<br>
+      Dự án SDN-FlexShield Defender
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
