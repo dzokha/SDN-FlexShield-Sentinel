@@ -19,7 +19,7 @@ Sentinel không chỉ kiểm tra giao thức bảo mật thông thường mà c�
 # Hướng dẫn cài đặt
 Để triển khai Sentinel trên trình duyệt Chrome, hãy thực hiện theo các bước sau:
 
-## Bước 1: Chuẩn bị mã nguồn
+## 1. Chuẩn bị mã nguồn
 
 Tải hoặc clone dự án từ GitHub:
 
@@ -56,7 +56,7 @@ Sau khi cài đặt thành công, giao diện tiện ích sẽ hiển thị như
 
 ![Giao diện SDN-FlexShield-Sentinel](images/giaodien.png)
 
-# Cơ sở khoa học
+## Cơ sở khoa học
 Dự án được xây dựng dựa trên bài báo khoa học:
 
 "Nhận thức an ninh mạng: Từ nhận biết đến hành động an toàn trong chuyển đổi số" > Nhóm tác giả: Nguyễn Văn Kha, Nguyễn Hoàng Phương, Lê Quyết Thắng.
