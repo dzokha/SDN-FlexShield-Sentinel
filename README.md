@@ -16,17 +16,7 @@ Sentinel không chỉ kiểm tra giao thức bảo mật thông thường mà c�
 * **6. DOM Script:** Giám sát các hành vi chuyển hướng tự động (Redirect) và các cửa sổ Pop-up giả mạo.
 * **7. Language:** Nhận diện các từ khóa thao túng tâm lý (ví dụ: "khóa tài khoản", "khẩn cấp").
 
-# Kiến trúc Hệ sinh thái
-Sentinel là một thành phần trong mô hình bảo mật đa lớp trong Kiến trúc hệ sinh thái SDN-FlexShield Defender
 
-- **SDN-FlexShield Defender**
-  - **SDN-FlexShield-Sentinel** – Plugin giám sát & cảnh báo phía người dùng
-  - **SDN-FlexShield-Console** – Ứng dụng Desktop cho SOC & quản trị
-  - **SDN-FlexShield-Enforcer** – Module Router / SDN Controller
-  - **SDN-FlexShield-Core** – Server / Backend trung tâm
-  - **SDN-FlexShield-HoneyCore** – Honeynet & Deception
-  - **SDN-FlexShield-AegisAI** – AI Engine phân tích & dự đoán
-  - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
 
 Hướng dẫn cài đặt
 Để triển khai Sentinel trên trình duyệt Chrome, hãy thực hiện theo các bước sau:
@@ -89,7 +79,19 @@ Dự án được xây dựng dựa trên bài báo khoa học:
 
 Dự án áp dụng mô hình nhận thức tình huống của Endsley (1995) để chuyển hóa các chỉ số kỹ thuật thành cảnh báo trực quan, giúp người dùng ra quyết định an toàn.
 
-## 🤝 Đóng góp & Bản quyền
+# Kiến trúc Hệ sinh thái SDN-FlexShield Defender
+Sentinel là một thành phần trong mô hình bảo mật đa lớp:
+
+- **SDN-FlexShield Defender**
+  - **SDN-FlexShield-Sentinel** – Plugin giám sát & cảnh báo phía người dùng
+  - **SDN-FlexShield-Console** – Ứng dụng Desktop cho SOC & quản trị
+  - **SDN-FlexShield-Enforcer** – Module Router / SDN Controller
+  - **SDN-FlexShield-Core** – Server / Backend trung tâm
+  - **SDN-FlexShield-HoneyCore** – Honeynet & Deception
+  - **SDN-FlexShield-AegisAI** – AI Engine phân tích & dự đoán
+  - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
+
+# Đóng góp & Bản quyền
 
 - **Tác giả:** Dzokha
 - **Giấy phép:** Dự án này được cấp phép theo tiêu chuẩn **MIT License**.
