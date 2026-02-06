@@ -1,5 +1,8 @@
 # SDN-FlexShield: Sentinel
 
+🌐 Tài liệu này có bản tiếng Anh:
+- 🇬🇧 [English](README.md)
+
 SDN-FlexShield: Sentinel is a browser extension aimed at enhancing end-user cybersecurity awareness through a client-side, indicator-based analysis framework for phishing detection, providing interpretable warnings that support safer online behavior.
 
 # Core Features
