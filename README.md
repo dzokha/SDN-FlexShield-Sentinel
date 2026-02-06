@@ -85,272 +85,48 @@ We adhere to the **Principle of Least Privilege**.
 
 ### Step 1: Get the Source Code
 Clone the repository or download the ZIP file:
-```bash
-git clone [https://github.com/dzokha/SDN-FlexShield-Sentinel.git](https://github.com/dzokha/SDN-FlexShield-Sentinel.git)
+```
+git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git
+```
 
+After downloading, ensure you have the folder named SDN-FlexShield-Sentinel.
 
+### Step 2: Load into Chrome
 
+Open Google Chrome and navigate to: chrome://extensions/
 
+Enable Developer Mode (Toggle the switch in the top-right corner).
 
+Click the Load unpacked button (Top-left).
 
+Select the SDN-FlexShield-Sentinel directory you just downloaded.
 
-# 🛡️ SDN-FlexShield: Sentinel
+### Step 3: Pin & Run
 
-Client-side, Indicator-based Phishing Awareness Browser Extension
+Click the Extensions icon (🧩) on the Chrome toolbar.
 
-🌐 Read this documentation in:
-- 🇻🇳 [Tiếng Việt](README.vi.md)
+Pin SDN-FlexShield: Sentinel for quick access.
 
+Visit any website to see the analysis in action.
 
-📌 Overview
-
-SDN-FlexShield: Sentinel is an open-source browser extension designed to enhance end-user cybersecurity awareness by performing client-side, indicator-based analysis of visited websites.
-The extension focuses on early phishing risk detection and delivers interpretable security warnings to support safer online behavior.
-
-Unlike blacklist-based or opaque detection tools, Sentinel emphasizes transparency, explainability, and privacy-by-design.
-
-🎯 Design Goals
-
-🔍 Explainable Security – clear, human-readable risk indicators
-
-🔒 Privacy First – no user data collection or tracking
-
-🧠 Client-Side Analysis – no server-side processing
-
-🧪 Research-Oriented – suitable for academic study and extension
-
-🌐 Open Source Transparency – auditable and extensible codebase
-
-🧠 How It Works
-
-SDN-FlexShield: Sentinel analyzes the currently visited website using a set of seven technical risk indicators derived from common phishing and web-based attack techniques.
-
-Analysis Pipeline
-
-URL & Domain Inspection
-
-TLS/HTTPS Security Verification
-
-DNS Resolution (Optional, via DNS-over-HTTPS)
-
-Content-Based Heuristic Checks
-
-Indicator Aggregation & Interpretation
-
-User-Facing Risk Notification
-
-All processing is performed locally within the browser.
-
-⚠️ Security Indicators
-
-The extension evaluates the following categories of indicators:
-
-Use of direct IP address instead of domain names
-
-URL obfuscation (e.g., @ character misuse)
-
-Domain impersonation (e.g., .gov misuse)
-
-Absence of HTTPS/TLS encryption
-
-Suspicious page structure or hidden elements
-
-DNS resolution anomalies
-
-Additional heuristic-based signals
-
-📌 Indicators are inspired by publicly documented phishing techniques referenced in ENISA reports, APWG analyses, and MITRE ATT&CK (Initial Access – TA0001).
-
-🔐 Privacy & Data Protection
-✅ What Sentinel DOES
-
-Analyzes URLs locally
-
-Displays security indicators in real time
-
-Optionally resolves DNS records via public DNS-over-HTTPS
-
-❌ What Sentinel DOES NOT Do
-
-❌ Collect browsing history
-
-❌ Store or transmit user data
-
-❌ Track users or behavior
-
-❌ Use analytics, ads, or telemetry
-
-❌ Communicate with proprietary servers
-
-No user data ever leaves the browser.
-
-🛡️ Security by Design
-
-Sentinel follows established secure design principles:
-
-Principle of Least Privilege
-Only accesses the active tab when explicitly invoked.
-
-No Remote Code Execution
-No dynamic code loading or execution.
-
-No Persistent Storage of Sensitive Data
-
-Open-Source Audibility
-All logic is transparent and verifiable.
-
-🔍 Threat Model (Summary)
-Threat Vector Mitigation
-Data exfiltration Not implemented
-User tracking Not implemented
-Malicious code injection  Not possible
-Server-side abuse No backend exists
-Third-party analytics None
-🧪 Intended Use Cases
-
-End-user phishing awareness
-
-Educational demonstrations (cybersecurity courses)
-
-Research prototypes for indicator-based detection
-
-Baseline system for AI-enhanced phishing detection
-
-SOC / Blue Team training tools
-
-📚 Standards & References
-
-This project aligns conceptually with:
-
-NIST SP 800-61 – Incident Handling Indicators
-
-NIST SP 800-92 – Security Monitoring Concepts
-
-ENISA Phishing Threat Landscape
-
-MITRE ATT&CK – Initial Access (TA0001)
-
-Sentinel is a research-oriented tool and not a replacement for enterprise-grade security solutions.
-
-🔓 Open Source & Transparency
-
-We believe in security through transparency.
-
-Researchers, developers, and practitioners are encouraged to:
-
-Review the source code
-
-Validate the detection logic
-
-Extend indicators or scoring models
-
-Adapt the tool for academic or training purposes
-
-🚧 Limitations
-
-Sentinel uses heuristic indicators, not machine learning
-
-False positives are possible
-
-The extension does not block websites automatically
-
-Detection scope is intentionally conservative
-
-🚀 Roadmap (Planned)
-
-Risk scoring & confidence estimation
-
-IDN homograph attack detection
-
-MITRE ATT&CK mapping per indicator
-
-Optional local ML-based enrichment
-
-Academic evaluation datasets
-
-👤 Author & License
-
-Author: Dzokha
-License: MIT License
-Project Type: Research Prototype
-
-This project is developed for educational and research purposes within the domain of network and web security.
-
-🤝 Contributing
-
-Contributions, reviews, and academic feedback are welcome.
-Please ensure all contributions align with the project’s privacy-first and security-focused principles.
-
-🔑 Final Note
-
-SDN-FlexShield: Sentinel is designed to help users understand why a website may be risky, not just whether it is risky.
-Transparency and explainability are core to building trust in security tools.
-
-
-
-
-
-
-SDN-FlexShield: Sentinel is a browser extension aimed at enhancing end-user cybersecurity awareness through a client-side, indicator-based analysis framework for phishing detection, providing interpretable warnings that support safer online behavior.
-
-# Core Features
-
-### Seven-Indicator Detection Framework
-
-* **1. Domain:** Analyzes domain name structures to detect typosquatting and the use of raw IP addresses instead of legitimate domain names.
-* **2. URL:** Identifies suspicious URL patterns, including special characters (e.g., @), complex URL encoding, and inconsistencies between displayed text and actual links.
-* **3. SSL/TLS:** Verifies digital certificates and issues warnings for websites that still use unencrypted HTTP connections.
-* **4. Web Form:** Detects and alerts users when forms collecting sensitive information submit data to untrusted or unknown domains.
-* **5. Content:** Evaluates the consistency of visual and textual elements such as logos and page titles, and detects unauthorized hotlinking techniques.
-* **6. DOM Script:** Monitors client-side script behaviors, including automatic redirections and deceptive pop-up windows.
-* **7. Language:** Identifies psychological manipulation keywords commonly used in phishing attacks (e.g., “account suspended”, “urgent action required”).
-
-# Installation Guide
-
-## 1. Source Code Preparation
-
-Download or clone the project from GitHub:
-
-https://github.com/dzokha/SDN-FlexShield-Sentinel
-
-After downloading, extract the project directory named: SDN-FlexShield-Sentinel
-
-## 2. Installing the Extension on Google Chrome
-
-Install Sentinel as an unpacked Chrome extension by following these steps.
-
-### Step 1: Open the Extensions Management Page
-- Open Google Chrome
-- Navigate to: chrome://extensions/
-
-### Step 2: Enable Developer Mode
-
-Enable Developer mode in the top-right corner of the page
-
-### Step 3: Load the Unpacked Extension
-
-- Click Load unpacked
-
-- Select the folder: SDN-FlexShield-Sentinel
-
-- Click Select Folder
-
-### Step 4: Pin the Extension
-
--  Click the Extensions icon on the Chrome toolbar
-
-- Pin SDN-FlexShield-Sentinel for quick access
-
-
-## 3. Result
-
-After successful installation, the extension interface will appear as shown below:
+📸 Screenshot
+(Interface showing Risk Score and Detected Indicators)
 
 ![SDN-FlexShield-Sentinel Interface](images/giaodien.png)
 
-## Scientific Background
 
-1. Nguyen Van Kha, Nguyen Hoang Phuong, Le Quyet Thang. "Cybersecurity awareness: from recognition to safe action in digital transformation”.
+🏗️ Ecosystem Architecture
+Sentinel is the client-side component of the comprehensive SDN-FlexShield Defender ecosystem:
+
+graph TD
+    Defender[🛡️ SDN-FlexShield Defender]
+    Defender --> Sentinel(Sentinel: User-Side Plugin)
+    Defender --> Console(Console: SOC Operations)
+    Defender --> Enforcer(Enforcer: SDN Router Control)
+    Defender --> Core(Core: Central Backend)
+    Defender --> HoneyCore(HoneyCore: Deception/Honeynet)
+    Defender --> AegisAI(AegisAI: AI Prediction Engine)
+    Defender --> Audit(Audit: Forensic & Compliance)
 
 # SDN-FlexShield Defender Ecosystem Architecture
 
@@ -364,9 +140,54 @@ Sentinel is a component of the multi-layer security architecture of SDN-FlexShie
   - **SDN-FlexShield-HoneyCore** – Honeynet and deception environment
   - **SDN-FlexShield-AegisAI** – AI engine for analysis and prediction
   - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
-  
----
 
-*© 2025 Dzokha*
+Sentinel: End-user monitoring and alerting (This Repo).
+
+Console: Desktop app for SOC administration.
+
+AegisAI: Advanced machine learning for threat prediction.
+
+# 📚 Scientific Background
+This tool is a research prototype supporting the study of Human-Centric Cybersecurity.
+
+Primary Citation:
+
+Nguyen Van Kha, Nguyen Hoang Phuong, Le Quyet Thang. "Cybersecurity awareness: from recognition to safe action in digital transformation".
+
+Standards Alignment:
+
+NIST SP 800-61: Incident Handling Indicators.
+
+MITRE ATT&CK: Initial Access (TA0001) - Phishing.
+
+# 🚧 Limitations & Roadmap
+Heuristic-based: Currently relies on static rules, prone to False Positives on complex legitimate sites.
+
+No Blocking: The tool warns but does not block traffic (intended for educational/awareness purposes).
+
+Upcoming Features:
+
+[ ] IDN Homograph attack detection.
+
+[ ] Local Machine Learning (TensorFlow.js) integration.
+
+[ ] Risk Scoring Confidence Estimation.
+
+# 🤝 Contributing
+Contributions, reviews, and academic feedback are welcome! Please ensure all pull requests align with the project’s Privacy-First principles.
+
+#  Author & License
+
+Author: Dzokha
+
+License: MIT License
+
+Copyright: © 2025 Dzokha
+
+
+
+
+
+  
 
 
