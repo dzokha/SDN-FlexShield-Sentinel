@@ -59,7 +59,7 @@ After successful installation, the extension interface will appear as shown belo
 
 ## Scientific Background
 
-1. Nguyen Van Kha, Nguyen Hoang Phuong, Le Quyet Thang. "Cybersecurity Awareness: From Recognition to Safe Actions in Digital Transformation”.
+1. Nguyen Van Kha, Nguyen Hoang Phuong, Le Quyet Thang. "Cybersecurity awareness: from recognition to safe action in digital transformation”.
 
 # SDN-FlexShield Defender Ecosystem Architecture
 
