@@ -80,13 +80,9 @@ We adhere to the **Principle of Least Privilege**.
 
 ## 🚀 Installation Guide
 
-### Prerequisites
-* Google Chrome (or Chromium-based browsers like Edge, Brave).
-* Git (optional, for cloning).
-
 ### Step 1: Get the Source Code
 * Clone the repository or download the ZIP file: `git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git`
-* After downloading, ensure you have the folder named SDN-FlexShield-Sentinel.
+* After downloading, ensure you have the folder named `SDN-FlexShield-Sentinel`.
 
 ### Step 2: Load into Chrome
 * Open **Google Chrome** and navigate to: `chrome://extensions/`
