@@ -1,3 +1,66 @@
+
+# 🛡️ SDN-FlexShield: Sentinel
+
+**Client-side, Indicator-based Phishing Awareness Browser Extension**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Project Type](https://img.shields.io/badge/Project-Research%20Prototype-blueviolet)](https://dzokha.vn)
+[![Platform](https://img.shields.io/badge/Platform-Chrome%20Extension-blue)](https://www.google.com/chrome/)
+
+🌐 **Read this documentation in:** [🇻🇳 Tiếng Việt](README.vi.md)
+
+---
+
+## 📌 Overview
+
+**SDN-FlexShield: Sentinel** is an open-source browser extension designed to enhance end-user cybersecurity awareness by performing **client-side, indicator-based analysis** of visited websites.
+
+The extension focuses on **early phishing risk detection** and delivers interpretable security warnings (**XAI - Explainable AI**) to support safer online behavior. Unlike blacklist-based or opaque detection tools, Sentinel emphasizes transparency, explainability, and privacy-by-design.
+
+### 🎯 Design Goals
+| Goal | Description |
+| :--- | :--- |
+| **🔍 Explainable Security** | Provides clear, human-readable risk indicators so users understand *why* a site is risky. |
+| **🔒 Privacy First** | No user data collection, tracking, or exfiltration. Analysis happens locally. |
+| **🧠 Client-Side Analysis** | Zero dependency on backend servers for real-time analysis. |
+| **🧪 Research-Oriented** | Built as a baseline system for academic study and AI-enhanced extension. |
+
+---
+
+## 🧠 Core Features & Detection Framework
+
+Sentinel analyzes the currently visited website using a set of **seven technical risk indicators** derived from common phishing and web-based attack techniques (aligned with **MITRE ATT&CK [TA0001](https://attack.mitre.org/tactics/TA0001/)**).
+
+
+
+### The 7-Point Indicator System
+
+1. **🌐 Domain Integrity**: Detects typosquatting and flags raw IP addresses (e.g., `192.168.x.x`).
+2. **🔗 URL Analysis**: Identifies obfuscation techniques and misuse of special characters (e.g., `@`).
+3. **🔐 SSL/TLS Verification**: Verifies certificate status and flags unencrypted HTTP connections.
+4. **📝 Web Form Security**: Detects insecure data transmission and cross-origin form submission.
+5. **🎨 Content Consistency**: Evaluates visual/textual elements for UI spoofing or hotlinking.
+6. **⚡ DOM & Script Behavior**: Monitors anomalies like automatic redirections or clickjacking.
+7. **💬 Social Engineering Language**: Identifies psychological manipulation keywords (e.g., "Urgent action required").
+
+---
+
+## 🔐 Privacy & Data Protection
+
+We adhere to the **Principle of Least Privilege**.
+
+| ✅ What Sentinel DOES | ❌ What Sentinel DOES NOT Do |
+| :--- | :--- |
+| Analyzes URLs locally within the browser. | ❌ Collect browsing history. |
+| Displays security indicators in real-time. | ❌ Store, transmit, or sell user data. |
+| Resolves DNS via public DoH (DNS-over-HTTPS). | ❌ Track user behavior or use analytics. |
+| | ❌ Communicate with proprietary backend servers. |
+
+> **Security Note:** All logic is transparent and auditable. No user data ever leaves the local environment.
+
+---
+
+
 # 🛡️ SDN-FlexShield: Sentinel
 
 **Client-side, Indicator-based Phishing Awareness Browser Extension**
