@@ -1,180 +1,96 @@
-# SDN-FlexShield: Sentinel
+# 🛡️ SDN-FlexShield: Sentinel
 
-🌐 Tài liệu này có bản tiếng Anh:
-- 🇬🇧 [English](README.md)
+**Tiện ích trình duyệt phân tích chỉ số nhận diện tấn công giả mạo (Phishing) phía máy khách**
 
+🌐 Xem tài liệu bằng ngôn ngữ khác: 🇺🇸 English
 
-II. Phân tích chi tiết theo từng lớp an ninh
-1️⃣ Quyền truy cập (Permissions – Chrome Extension)
-Hiện tại
+## 📌 Tổng quan
+SDN-FlexShield: Sentinel là một tiện ích trình duyệt mã nguồn mở được thiết kế để nâng cao nhận thức về an ninh mạng cho người dùng cuối. Công cụ này thực hiện phân tích dựa trên các chỉ số rủi ro trực tiếp phía máy khách đối với các trang web đang truy cập.
 
-Truy cập:
+Tiện ích tập trung vào việc phát hiện sớm rủi ro lừa đảo và đưa ra các cảnh báo bảo mật có thể giải thích được (XAI - Explainable AI) nhằm hỗ trợ hành vi trực tuyến an toàn hơn. Khác với các công cụ sử dụng danh sách đen (blacklist) hoặc các thuật toán đóng, Sentinel nhấn mạnh vào tính minh bạch, khả năng giải thích và quyền riêng tư ngay từ khâu thiết kế (Privacy-by-design).
 
-Tab đang hoạt động
+🎯 Mục tiêu thiết kế
+🧠 Tính năng cốt lõi & Khung phát hiện
+Sentinel phân tích trang web hiện tại thông qua bộ bảy chỉ số rủi ro kỹ thuật được đúc kết từ các kỹ thuật tấn công lừa đảo phổ biến (tương ứng với khung MITRE ATT&CK TA0001).
 
-URL
+### Hệ thống 7 Chỉ số Nhận diện
+1. **🌐 Tính toàn vẹn của tên miền (Domain Integrity)**
+* Phân tích cấu trúc tên miền để phát hiện kỹ thuật giả mạo (typosquatting).
+* Gắn cờ các trường hợp sử dụng địa chỉ IP thô (ví dụ: 192.168.x.x) thay vì tên miền hợp lệ.
 
-Nội dung trang (content script)
+2. **🔗 Phân tích URL**
+* Nhận diện các mẫu URL nghi ngờ và kỹ thuật làm xáo trộn (obfuscation).
+* Phát hiện việc lạm dụng ký tự đặc biệt (ví dụ: ký tự @ để che giấu thông tin đăng nhập) và mã hóa URL phức tạp.
 
-✅ Hợp lý cho mục đích phân tích phishing
-❌ Nhưng chưa được giải thích rõ với người dùng
+3. **🔐 Xác thực SSL/TLS**
+* Kiểm tra trạng thái của các chứng chỉ kỹ thuật số.
+* Đưa ra cảnh báo mức độ nghiêm trọng đối với các trang web sử dụng kết nối HTTP không được mã hóa.
 
-2️⃣ Xử lý dữ liệu người dùng (Privacy & Data Protection)
-Hiện tại
+4. **📝 Bảo mật biểu mẫu web (Web Form Security)**
+* Phát hiện truyền tải dữ liệu không an toàn trong các thẻ <form>.
+* Cảnh báo khi các biểu mẫu thu thập dữ liệu nhạy cảm gửi thông tin đến các tên miền không đáng tin cậy hoặc khác nguồn.
 
-❌ Không gửi URL/IP về server riêng
+5. **🎨 Tính nhất quán của nội dung**
+* Đánh giá các yếu tố hình ảnh và văn bản (Logo, Tiêu đề trang).
+* Phát hiện kỹ thuật hotlinking trái phép hoặc giả mạo giao diện người dùng (UI spoofing).
 
-❌ Không lưu log
+6. **⚡ Hành vi DOM & Script**
+* Giám sát các dấu hiệu bất thường của tập lệnh phía máy khách.
+* Gắn cờ các hành vi tự động chuyển hướng, cửa sổ bật lên (pop-up) lừa đảo hoặc tấn công chiếm quyền điều khiển click (clickjacking).
 
-❌ Không tracking người dùng
+7. **💬 Ngôn ngữ thao túng tâm lý (Social Engineering)**
+* Nhận diện các từ khóa thao túng tâm lý thường thấy trong các cuộc tấn công lừa đảo.
+* Ví dụ từ khóa: "Tài khoản bị khóa", "Yêu cầu hành động khẩn cấp", "Xác minh ngay lập tức".
 
-✅ RẤT TỐT – Privacy-by-Design
+## 🚀 Hướng dẫn cài đặt
+### Bước 1: Tải mã nguồn
+* Sao chép kho lưu trữ hoặc tải xuống tệp ZIP: git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git
+* Sau khi tải về, hãy đảm bảo bạn có thư mục tên là SDN-FlexShield-Sentinel.
+### Bước 2: Tải lên Chrome
+* Mở Google Chrome và truy cập: chrome://extensions/
+* Bật Chế độ dành cho nhà phát triển (Developer Mode) ở góc trên bên phải.
+* Nhấp vào nút Tải tiện ích đã giải nén (Load unpacked) ở góc trên bên trái.
+* Chọn thư mục SDN-FlexShield-Sentinel mà bạn vừa tải về.
 
-🔧 Đề xuất nâng cấp
+### Bước 3: Ghim & Sử dụng
+* Nhấp vào biểu tượng Tiện ích (🧩) trên thanh công cụ Chrome.
+* Ghim SDN-FlexShield: Sentinel để truy cập nhanh.
+* Truy cập bất kỳ trang web nào để xem hệ thống phân tích theo thời gian thực.
 
-Privacy Statement ngay trong README
+## 🏗️ Kiến trúc hệ sinh thái
+Sentinel là lớp bảo vệ chủ động phía người dùng thuộc hệ sinh thái SDN-FlexShield Defender:
 
-Cam kết:
+📚 Cơ sở khoa học & Tiêu chuẩn
+Dự án này được xây dựng dựa trên các nghiên cứu đã được bình duyệt và các tiêu chuẩn an ninh mạng quốc tế.
 
-Không thu thập
+Công bố liên quan
+Nguyễn Văn Kha, Nguyễn Hoàng Phương, Lê Quyết Thắng. “Nâng cao nhận thức an toàn thông tin: Từ nhận diện đến hành động an toàn trong chuyển đổi số.”
 
-Không lưu trữ
+Tuân thủ tiêu chuẩn
+NIST SP 800-61: Các chỉ số xử lý sự cố.
 
-Không chia sẻ dữ liệu
+MITRE ATT&CK: [Initial Access (TA0001)] – Phishing.
 
-📌 Câu tuyên bố mạnh (khuyên dùng):
+## 🚧 Lộ trình phát triển
+[x] Phân tích tĩnh dựa trên các chỉ số nhận diện rủi ro (Heuristic).
 
-“SDN-FlexShield: Sentinel performs all analyses locally on the client side and does not collect, store, or transmit any user browsing data.”
+[ ] Phát hiện tấn công giả mạo tên miền bằng ký tự đồng hình (IDN Homograph).
 
+[ ] Tích hợp máy học cục bộ (Local Machine Learning) qua TensorFlow.js.
 
-3️⃣ Phân tích kỹ thuật (Code Security Review)
-🔍 a. URL & Domain Analysis
+[ ] Ước tính độ tin cậy của điểm số rủi ro.
 
-✅ An toàn:
+## 👤 Tác giả & Giấy phép
+Nguyễn Văn Kha (Dzokha) – Trưởng nhóm phát triển
 
-Không eval
+Trương Quang Nhật Minh
 
-Không parse HTML nguy hiểm
+Nguyễn Hoàng Phương
 
-Không inject code
+Lê Quyết Thắng
 
-🔧 Có thể bổ sung:
+Giấy phép: Được phân phối theo Giấy phép MIT.
 
-Normalize URL (punycode, IDN)
+---
 
-Detect homograph attacks
-
-📌 Gợi ý thêm kỹ thuật:
-
-IDN Homograph Detection (Unicode → ASCII)
-
-b. DNS Resolution (Google DoH)
-
-✅ Ưu điểm:
-
-Dùng DNS over HTTPS
-
-Không tự xây resolver
-
-⚠️ Rủi ro tiềm ẩn:
-
-Phụ thuộc bên thứ ba (Google DNS)
-
-🔧 Gợi ý nâng cấp:
-
-Cho phép tắt DNS lookup
-
-Hoặc chọn resolver (Google / Cloudflare)
-
-📌 Viết trong README:
-
-“DNS resolution is optional and performed via public DNS-over-HTTPS resolvers.”
-
-
-c. Message Passing (popup ↔ content script)
-
-✅ An toàn:
-
-Không thực thi dữ liệu nhận được
-
-Chỉ đọc indicator strings
-
-🔧 Nâng cao:
-
-Validate response schema
-
-Whitelist indicator types
-
-
-
-4️⃣ Threat Model (rất quan trọng khi công bố mã nguồn)
-
-Anh nên công bố rõ plugin KHÔNG làm gì, tránh hiểu nhầm.
-
-📌 Gợi ý Threat Model (ngắn):
-
-Threat	Status
-Data exfiltration	❌ Not performed
-User tracking	❌ Not implemented
-Remote code execution	❌ Not possible
-Server-side logging	❌ Not used
-Third-party analytics	❌ None
-
-
-III. Các chuẩn & kỹ thuật nên bổ sung (để “nâng hạng”)
-🔒 1. Chuẩn nên viện dẫn (rất thuyết phục)
-
-Anh KHÔNG cần triển khai đầy đủ, chỉ cần tuân thủ tinh thần:
-
-NIST SP 800-61 – Incident indicators
-
-NIST SP 800-92 – Log & monitoring concepts
-
-ENISA Phishing Detection Guidelines
-
-MITRE ATT&CK (TA0001 – Initial Access)
-
-📌 Ví dụ câu viết:
-
-“The selected indicators are inspired by common phishing techniques described in ENISA reports and MITRE ATT&CK Initial Access tactics.”
-
-🔒 2. Kỹ thuật nên bổ sung vào code (có thể từ từ)
-Nhóm	Kỹ thuật
-URL	IDN homograph detection
-DNS	NXDOMAIN / fast-flux heuristic
-Content	Hidden form detection
-Risk	Risk score aggregation
-UX	Explainable alerts
-IV. Cách viết README để người dùng TIN & DÙNG
-🧠 Cấu trúc README khuyên dùng
-1️⃣ Why this extension exists
-
-Phishing vẫn là nguyên nhân hàng đầu gây sự cố an ninh…
-
-2️⃣ What it does (and does NOT do)
-
-✔️ Client-side analysis
-
-❌ No tracking
-
-❌ No data collection
-
-3️⃣ Security by Design
-
-Least privilege
-
-No remote execution
-
-Open-source transparency
-
-4️⃣ Indicators Explained
-
-Mỗi indicator → giải thích ngắn, có nguồn
-
-5️⃣ Open-source trust
-
-“Security through transparency.”
-
-🔑 Câu “đinh” tạo niềm tin (rất nên dùng)
-
-“SDN-FlexShield: Sentinel is designed with a privacy-first and transparency-driven approach, allowing users and researchers to audit, verify, and extend its security logic.”
+Trong một thế giới đầy rẫy các mối đe dọa mơ hồ, Sentinel ưu tiên sự minh bạch và hiểu biết. Người dùng được trang bị kiến thức là lớp bảo vệ quan trọng nhất của an ninh mạng hiện đại.
