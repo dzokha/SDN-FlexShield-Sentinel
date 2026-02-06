@@ -118,8 +118,3 @@ This project is conceptually aligned with:
 - **Project Maintainer**: Kha Van Nguyen (Dzokha).
 - **Author Team**: Quang Nhat Minh Truong, Phuong Hoang Nguyen, Thang Quyet Le.
 - **License**: MIT License
-
----
-
-SDN-FlexShield: Sentinel is designed to reduce risk, not to replace professional security solutions.
-Its primary goal is to improve user awareness through transparent and explainable security indicators.

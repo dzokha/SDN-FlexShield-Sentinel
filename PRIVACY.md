@@ -150,8 +150,3 @@ No updates will introduce data collection **without explicit user awareness**.
 - **Project Maintainer**: Kha Van Nguyen (Dzokha).
 - **Author Team**: Quang Nhat Minh Truong, Phuong Hoang Nguyen, Thang Quyet Le.
 - **License**: MIT License
-
----
-
-**SDN-FlexShield: Sentinel respects user privacy by design.**  
-The extension exists to improve security awareness — **not** to observe, track, or profile users.

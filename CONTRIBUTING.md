@@ -122,8 +122,3 @@ Contributors must ensure that:
 - **Project Maintainer**: Kha Van Nguyen (Dzokha).
 - **Author Team**: Quang Nhat Minh Truong, Phuong Hoang Nguyen, Thang Quyet Le.
 - **License**: MIT License
-
----
-
-SDN-FlexShield: Sentinel values quality over quantity.
-Contributions that enhance transparency, security, and user trust are especially welcome.
