@@ -134,17 +134,13 @@ We aim to acknowledge reports in a timely manner and address confirmed issues re
 
 ## 🔓 Security Through Transparency
 
-“Security is strengthened when systems are open to scrutiny.”
+> “Security is strengthened when systems are open to scrutiny.”
 
 By open-sourcing SDN-FlexShield: Sentinel, we invite the community to:
-
-Audit the code
-
-Validate design decisions
-
-Propose improvements
-
-Use the project as a research or educational reference
+* Audit the code
+* Validate design decisions
+* Propose improvements
+* Use the project as a research or educational reference
 
 ## 📚 Compliance & References
 
@@ -152,7 +148,7 @@ This project is conceptually aligned with:
 
 - **NIST SP 800-61** – Incident Handling & Indicators
 - **NIST SP 800-92** – Security Monitoring
-- **ENISA** Phishing Threat Landscape
+- **ENISA** – Phishing Threat Landscape
 - **MITRE ATT&CK** – Initial Access (TA0001)
 
 ## 👤 Maintainer
