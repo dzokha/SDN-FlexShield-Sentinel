@@ -88,26 +88,20 @@ Clone the repository or download the ZIP file:
 ```
 git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git
 ```
-
 After downloading, ensure you have the folder named SDN-FlexShield-Sentinel.
 
 ### Step 2: Load into Chrome
 
-Open Google Chrome and navigate to: chrome://extensions/
-
-Enable Developer Mode (Toggle the switch in the top-right corner).
-
-Click the Load unpacked button (Top-left).
-
-Select the SDN-FlexShield-Sentinel directory you just downloaded.
+* Open Google Chrome and navigate to: chrome://extensions/
+* Enable Developer Mode (Toggle the switch in the top-right corner).
+* Click the Load unpacked button (Top-left).
+* Select the SDN-FlexShield-Sentinel directory you just downloaded.
 
 ### Step 3: Pin & Run
 
-Click the Extensions icon (🧩) on the Chrome toolbar.
-
-Pin SDN-FlexShield: Sentinel for quick access.
-
-Visit any website to see the analysis in action.
+* Click the Extensions icon (🧩) on the Chrome toolbar.
+* Pin SDN-FlexShield: Sentinel for quick access.
+* Visit any website to see the analysis in action.
 
 📸 Screenshot
 (Interface showing Risk Score and Detected Indicators)
