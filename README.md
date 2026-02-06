@@ -85,8 +85,6 @@ Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosy
 | **Core (AegisAI)** | Central backend with AI-driven analysis and prediction.              |
 | **HoneyCore**      | Honeynet and deception environment for threat intelligence.          |
 
----
-
 ## 📚 Scientific Background & Standards
 
 This work is grounded in peer-reviewed research and global cybersecurity standards.
