@@ -116,43 +116,43 @@ Sentinel is the client-side component of the comprehensive SDN-FlexShield Defend
   - **SDN-FlexShield-AegisAI** – AI engine for analysis and prediction
   - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
 
-## 📚 Scientific Background
-This work is grounded in prior research and established cybersecurity standards.
+---
+
+📊 ## Scientific Background & Standards
+
+This work is grounded in peer-reviewed research and global cybersecurity standards.
 
 ### Related Publication
-1. Nguyen Van Kha, Nguyen Hoang Phuong, Le Quyet Thang,  
-   *“Cybersecurity Awareness: From Recognition to Safe Action in Digital Transformation.”*
+- **Nguyen Van Kha**, et al.  
+  *“Cybersecurity Awareness: From Recognition to Safe Action in Digital Transformation.”*
 
 ### Standards Alignment
-- **NIST SP 800-61**: Incident Handling Indicators  
-- **MITRE ATT&CK**: Initial Access (TA0001) – Phishing
+- **NIST SP 800-61**: Incident Handling Indicators.  
+- **MITRE ATT&CK**: [Initial Access (TA0001)] – Phishing.
 
-## 🚧 Limitations & Roadmap
-Heuristic-based: Currently relies on static rules, prone to False Positives on complex legitimate sites.
+---
 
-No Blocking: The tool warns but does not block traffic (intended for educational/awareness purposes).
+🛣️ ## Roadmap
 
-Upcoming Features:
+- [x] Heuristic-based static analysis.  
+- [ ] **IDN Homograph** attack detection.  
+- [ ] **Local Machine Learning** (TensorFlow.js) integration.  
+- [ ] **Risk Scoring Confidence Estimation**.
 
-[ ] IDN Homograph attack detection.
+---
 
-[ ] Local Machine Learning (TensorFlow.js) integration.
+🤝 ## Contributing & Authors
 
-[ ] Risk Scoring Confidence Estimation.
+Contributions, reviews, and academic feedback are welcome!
 
-## 🤝 Contributing
-Contributions, reviews, and academic feedback are welcome! Please ensure all pull requests align with the project’s Privacy-First principles.
+### Core Contributors:
+- **Kha Van Nguyen (Dzokha)** – Lead Developer  
+- **Quang Nhat Minh Truong**  
+- **Phuong Hoang Nguyen**  
+- **Thang Quyet Le**
 
-## 👤 Author & License
+**License:** Distributed under the **MIT License**.
 
-- **Author:** Kha Van Nguyen (Dzokha), Quang Nhat Minh Truong
-- **License:** MIT License
+---
 
-
-
-
-
-
-  
-
-
+*Developed with ❤️ for a safer web.*
