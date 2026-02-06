@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+
+title: "SDN-FlexShield: Sentinel"
+type: software
+
+authors:
+  - given-names: Dzokha
+    family-names: Nguyen
+    affiliation: "Independent Researcher, Cybersecurity"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+
+abstract: >
+  SDN-FlexShield: Sentinel is an open-source browser extension designed to enhance
+  end-user cybersecurity awareness through client-side, indicator-based phishing
+  risk analysis. The tool emphasizes privacy-by-design, transparency, and explainable
+  security warnings, making it suitable for research, education, and security awareness
+  applications.
+
+keywords:
+  - cybersecurity
+  - phishing detection
+  - browser extension
+  - security awareness
+  - indicator-based analysis
+  - privacy-by-design
+  - explainable security
+
+license: MIT
+
+repository-code: "https://github.com/your-username/sdn-flexshield-sentinel"
+
+url: "https://github.com/your-username/sdn-flexshield-sentinel"
+
+version: "1.0.0"
+
+date-released: "2026-02-01"
+
+preferred-citation:
+  type: software
+  authors:
+    - given-names: Dzokha
+      family-names: Nguyen
+  title: "SDN-FlexShield: Sentinel"
+  year: 2026
+  version: "1.0.0"
+  url: "https://github.com/your-username/sdn-flexshield-sentinel"
