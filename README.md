@@ -128,17 +128,15 @@ Sentinel is the client-side component of the comprehensive SDN-FlexShield Defend
   - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
 
 ## 📚 Scientific Background
-This tool is a research prototype supporting the study of Human-Centric Cybersecurity.
+This work is grounded in prior research and established cybersecurity standards.
 
-Primary Citation:
+### Related Publication
+1. Nguyen Van Kha, Nguyen Hoang Phuong, Le Quyet Thang,  
+   *“Cybersecurity Awareness: From Recognition to Safe Action in Digital Transformation.”*
 
-Nguyen Van Kha, Nguyen Hoang Phuong, Le Quyet Thang. "Cybersecurity awareness: from recognition to safe action in digital transformation".
-
-Standards Alignment:
-
-NIST SP 800-61: Incident Handling Indicators.
-
-MITRE ATT&CK: Initial Access (TA0001) - Phishing.
+### Standards Alignment
+- **NIST SP 800-61**: Incident Handling Indicators  
+- **MITRE ATT&CK**: Initial Access (TA0001) – Phishing
 
 ## 🚧 Limitations & Roadmap
 Heuristic-based: Currently relies on static rules, prone to False Positives on complex legitimate sites.
