@@ -6,11 +6,11 @@ version: "1.2"
 date-released: 2026-02-06
 
 abstract: >
-  SDN-FlexShield Sentinel is a browser-based security analysis module designed
-  to improve cybersecurity awareness through heuristic-based static analysis,
-  transparent risk scoring, and explainable threat indicators.
-  The system focuses on phishing detection, IDN homograph attacks, and protocol-level
-  inspection, supporting education and research in network and web security.
+  SDN-FlexShield Sentinel is a browser-based security analysis module that employs
+  heuristic-based static analysis, transparent risk scoring, and explainable threat
+  indicators to enhance cybersecurity awareness. The system targets phishing detection,
+  IDN homograph attacks, and protocol-level inspection, supporting education and research
+  in network and web security.
 
 authors:
   - family-names: Nguyen
@@ -35,11 +35,8 @@ authors:
 keywords:
   - Cybersecurity Awareness
   - Phishing Detection
-  - Heuristic Analysis
   - Explainable Security
   - Browser Extension
-  - SDN Security
-  - Honeynet
 
 license: MIT
 

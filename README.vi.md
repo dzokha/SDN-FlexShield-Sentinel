@@ -5,48 +5,31 @@
 🌐 **Xem tài liệu bằng ngôn ngữ khác:** [🇺🇸 English](README.md)
 
 ## 📌 Tổng quan
+
 SDN-FlexShield: Sentinel là một tiện ích trình duyệt mã nguồn mở được thiết kế để nâng cao nhận thức về an ninh mạng cho người dùng cuối. Công cụ này thực hiện phân tích dựa trên các chỉ số rủi ro trực tiếp phía máy khách đối với các trang web đang truy cập.
 
-Tiện ích tập trung vào việc phát hiện sớm rủi ro lừa đảo và đưa ra các cảnh báo bảo mật có thể giải thích được (XAI - Explainable AI) nhằm hỗ trợ hành vi trực tuyến an toàn hơn. Khác với các công cụ sử dụng danh sách đen (blacklist) hoặc các thuật toán đóng, Sentinel nhấn mạnh vào tính minh bạch, khả năng giải thích và quyền riêng tư ngay từ khâu thiết kế (Privacy-by-design).
+Tiện ích tập trung vào việc phát hiện sớm rủi ro lừa đảo và đưa ra các cảnh báo bảo mật có thể giải thích được nhằm hỗ trợ hành vi trực tuyến an toàn hơn. Khác với các công cụ sử dụng danh sách đen (blacklist) hoặc các thuật toán đóng, Sentinel nhấn mạnh vào tính minh bạch, khả năng giải thích và quyền riêng tư ngay từ khâu thiết kế (Privacy-by-design).
 
 ## 🧠 Tính năng cốt lõi & Khung phát hiện
 Sentinel phân tích trang web hiện tại thông qua bộ bảy chỉ số rủi ro kỹ thuật được đúc kết từ các kỹ thuật tấn công lừa đảo phổ biến (tương ứng với khung MITRE ATT&CK TA0001).
 
 ### Hệ thống 7 Chỉ số Nhận diện
 1. **🌐 Tính toàn vẹn của tên miền (Domain Integrity)**
-* Phân tích cấu trúc tên miền để phát hiện kỹ thuật giả mạo (typosquatting).
-* Gắn cờ các trường hợp sử dụng địa chỉ IP thô (ví dụ: 192.168.x.x) thay vì tên miền hợp lệ.
-
 2. **🔗 Phân tích URL**
-* Nhận diện các mẫu URL nghi ngờ và kỹ thuật làm xáo trộn (obfuscation).
-* Phát hiện việc lạm dụng ký tự đặc biệt (ví dụ: ký tự @ để che giấu thông tin đăng nhập) và mã hóa URL phức tạp.
-
 3. **🔐 Xác thực SSL/TLS**
-* Kiểm tra trạng thái của các chứng chỉ kỹ thuật số.
-* Đưa ra cảnh báo mức độ nghiêm trọng đối với các trang web sử dụng kết nối HTTP không được mã hóa.
-
 4. **📝 Bảo mật biểu mẫu web (Web Form Security)**
-* Phát hiện truyền tải dữ liệu không an toàn trong các thẻ <form>.
-* Cảnh báo khi các biểu mẫu thu thập dữ liệu nhạy cảm gửi thông tin đến các tên miền không đáng tin cậy hoặc khác nguồn.
-
 5. **🎨 Tính nhất quán của nội dung**
-* Đánh giá các yếu tố hình ảnh và văn bản (Logo, Tiêu đề trang).
-* Phát hiện kỹ thuật hotlinking trái phép hoặc giả mạo giao diện người dùng (UI spoofing).
-
 6. **⚡ Hành vi DOM & Script**
-* Giám sát các dấu hiệu bất thường của tập lệnh phía máy khách.
-* Gắn cờ các hành vi tự động chuyển hướng, cửa sổ bật lên (pop-up) lừa đảo hoặc tấn công chiếm quyền điều khiển click (clickjacking).
-
 7. **💬 Ngôn ngữ thao túng tâm lý (Social Engineering)**
-* Nhận diện các từ khóa thao túng tâm lý thường thấy trong các cuộc tấn công lừa đảo.
-* Ví dụ từ khóa: "Tài khoản bị khóa", "Yêu cầu hành động khẩn cấp", "Xác minh ngay lập tức".
 
 ## 🚀 Hướng dẫn cài đặt
+
 ### Bước 1: Tải mã nguồn
-* Sao chép kho lưu trữ hoặc tải xuống tệp ZIP: git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git
-* Sau khi tải về, hãy đảm bảo bạn có thư mục tên là SDN-FlexShield-Sentinel.
+* Sao chép kho lưu trữ hoặc tải xuống tệp ZIP: `git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git`
+* Sau khi tải về, hãy đảm bảo bạn có thư mục tên là `SDN-FlexShield-Sentinel`.
+
 ### Bước 2: Tải lên Chrome
-* Mở Google Chrome và truy cập: chrome://extensions/
+* Mở Google Chrome và truy cập: `chrome://extensions/`
 * Bật Chế độ dành cho nhà phát triển (Developer Mode) ở góc trên bên phải.
 * Nhấp vào nút Tải tiện ích đã giải nén (Load unpacked) ở góc trên bên trái.
 * Chọn thư mục SDN-FlexShield-Sentinel mà bạn vừa tải về.
@@ -56,8 +39,6 @@ Sentinel phân tích trang web hiện tại thông qua bộ bảy chỉ số r�
 * Ghim SDN-FlexShield: Sentinel để truy cập nhanh.
 * Truy cập bất kỳ trang web nào để xem hệ thống phân tích theo thời gian thực.
 
-## 🏗️ Kiến trúc hệ sinh thái
-Sentinel là lớp bảo vệ chủ động phía người dùng thuộc hệ sinh thái SDN-FlexShield Defender:
 
 ## 📚 Cơ sở khoa học & Tiêu chuẩn
 Dự án này được xây dựng dựa trên các nghiên cứu đã được bình duyệt và các tiêu chuẩn an ninh mạng quốc tế.
@@ -69,11 +50,6 @@ Dự án này được xây dựng dựa trên các nghiên cứu đã được 
 - **NIST SP 800-61:** Các chỉ số xử lý sự cố.
 - **MITRE ATT&CK:** [Initial Access (TA0001)] – Phishing.
 
-## 🚧 Lộ trình phát triển
-* [x] Phân tích tĩnh dựa trên các chỉ số nhận diện rủi ro (Heuristic).
-* [ ] Phát hiện tấn công giả mạo tên miền bằng ký tự đồng hình (IDN Homograph).
-* [ ] Tích hợp máy học cục bộ (Local Machine Learning) qua TensorFlow.js.
-* [ ] Ước tính độ tin cậy của điểm số rủi ro.
 
 ## 👤 Tác giả & Giấy phép
 - **Nguyễn Văn Kha (Dzokha)**
