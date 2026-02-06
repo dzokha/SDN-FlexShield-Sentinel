@@ -92,8 +92,7 @@ Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosy
 This work is grounded in peer-reviewed research and global cybersecurity standards.
 
 ### Related Publication
-- **Kha Van Nguyen, Phuong Hoang Nguyen, Thang Quyet Le**.  
-  *“Cybersecurity Awareness: From Recognition to Safe Action in Digital Transformation.”*
+- **Kha Van Nguyen, Phuong Hoang Nguyen, Thang Quyet Le**. *“Cybersecurity awareness: from recognition to safe action in digital transformation.”*
 
 ### Standards Alignment
 - **NIST SP 800-61**: Incident Handling Indicators.  
