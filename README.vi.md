@@ -75,7 +75,7 @@ Dự án này được xây dựng dựa trên các nghiên cứu đã được 
 ## 👤 Tác giả
 
 - **Nguyễn Văn Kha (Dzokha)**
-- **Trương Quang Nhật Minh**
+- **Trương Minh Nhật Quang**
 - **Nguyễn Hoàng Phương**
 - **Lê Quyết Thắng**
 
