@@ -178,9 +178,9 @@ Contributions, reviews, and academic feedback are welcome! Please ensure all pul
 
 ## 👤 Author & License
 
-- **Author:** Dzokha  
+- **Author:** Kha Van Nguyen (Dzokha)
 - **License:** MIT License  
-- **Copyright:** © 2025 Dzokha
+- **Copyright:** © 2025 Kha Van Nguyen
 
 
 
