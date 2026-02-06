@@ -44,7 +44,7 @@ Sentinel phân tích trang web hiện tại thông qua bộ bảy chỉ số r�
 Dự án này được xây dựng dựa trên các nghiên cứu đã được bình duyệt và các tiêu chuẩn an ninh mạng quốc tế.
 
 ### Công bố liên quan
-- **Nguyễn Văn Kha, Nguyễn Hoàng Phương, Lê Quyết Thắng**. *“Nâng cao nhận thức an toàn thông tin: Từ nhận diện đến hành động an toàn trong chuyển đổi số.”*
+- **Kha Van Nguyen, Phuong Hoang Nguyen, Thang Quyet Le**. *“Cybersecurity awareness: from recognition to safe action in digital transformation.”*
 
 ### Tuân thủ tiêu chuẩn
 - **NIST SP 800-61:** Các chỉ số xử lý sự cố.
@@ -56,6 +56,7 @@ Dự án này được xây dựng dựa trên các nghiên cứu đã được 
 - **Trương Quang Nhật Minh**
 - **Nguyễn Hoàng Phương**
 - **Lê Quyết Thắng**
+
 **Giấy phép:** Được phân phối theo **Giấy phép MIT.**
 
 ---
