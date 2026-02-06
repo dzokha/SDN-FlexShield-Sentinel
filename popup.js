@@ -1,78 +1,116 @@
 async function analyzeTab() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  if (!tab) return;
+  if (!tab || !tab.url.startsWith('http')) {
+    document.getElementById('severity-label').textContent = "INACTIVE";
+    return;
+  }
 
   const url = new URL(tab.url);
   const domain = url.hostname;
+  document.getElementById('domain').textContent = domain.length > 20 ? domain.substring(0, 18) + '..' : domain;
 
+  let triggeredIndicators = [];
+  let score = 0;
+
+  // 1. DNS Resolution
   try {
-    const response = await fetch(`https://dns.google/resolve?name=${domain}&type=A`);
-    const data = await response.json();
-    
-    if (data.Answer && data.Answer.length > 0) {
-      // Retrieve the first resolved IPv4 address from the DNS response
-      const ipAddress = data.Answer[0].data;
-      document.getElementById('ip').textContent = ipAddress;
-    } else {
-      document.getElementById('ip').textContent = 'No IP address resolved';
-    }
-  } catch (error) {
-    document.getElementById('ip').textContent = 'DNS resolution error';
-    console.error(error);
+    const dnsRes = await fetch(`https://dns.google/resolve?name=${domain}&type=A`);
+    const dnsData = await dnsRes.json();
+    document.getElementById('ip').textContent = dnsData.Answer ? dnsData.Answer[0].data : 'Not Resolved';
+  } catch (e) {
+    document.getElementById('ip').textContent = 'Error';
   }
 
-  // (1) & (2) Domain and URL Analysis
-  let domainRisk = "No anomaly detected";
+  // 2. Protocol Check (Base weight: 40)
+  const statusBadge = document.getElementById('status-badge');
+  if (url.protocol !== 'https:') {
+    triggeredIndicators.push("Unencrypted HTTP protocol in use");
+    score += 40;
+    statusBadge.textContent = "⚠ Insecure HTTP";
+    statusBadge.className = "status-danger";
+  } else {
+    statusBadge.textContent = "✓ Secure HTTPS";
+    statusBadge.className = "status-safe";
+  }
 
-  // Direct IP address usage instead of domain name
+  // 3. Domain Logic (Weights: 20-30)
   if (domain.match(/\d+\.\d+\.\d+\.\d+/)) {
-    domainRisk = "Direct IP address used instead of a domain name (High Risk)";
+    triggeredIndicators.push("Direct IP access (No domain name)");
+    score += 30;
   }
-
-  // Obfuscated URL using '@' character
   if (url.href.includes("@")) {
-    domainRisk = "URL contains obfuscation character '@'";
+    triggeredIndicators.push("URL obfuscation (@ character)");
+    score += 20;
   }
-
-  // Government domain impersonation detection
-  // (e.g., misuse of '.gov.vn' within URL path but not in the actual domain)
   if (url.pathname.includes("gov.vn") && !domain.endsWith(".gov.vn")) {
-    domainRisk = "Government domain impersonation detected (.gov.vn in URL path)";
+    triggeredIndicators.push("Government spoofing attempt");
+    score += 30;
   }
 
-  // Update domain information in the UI
-  document.getElementById('domain').textContent = domain;
-  
-  // (3) SSL/TLS Security Assessment
-  const statusDiv = document.getElementById('status');
-  const isSecure = url.protocol === 'https:';
-
-  statusDiv.textContent = isSecure
-    ? '✓ Secure connection (HTTPS with TLS)'
-    : '⚠ Insecure connection (HTTP without encryption)';
-
-  statusDiv.className = isSecure ? 'secure' : 'insecure';
-
-  // Invoke content script for remaining indicators (4, 5, 6, 7)
-  chrome.tabs.sendMessage(
-    tab.id,
-    { action: "analyze_content" },
-    (response) => {
-      const list = document.getElementById('risk-list');
-      list.innerHTML = ""; // Clear previous results
-      
-      const allIndicators = [domainRisk, ...(response?.results || [])];
-
-      allIndicators.forEach(indicator => {
-        if (indicator !== "No anomaly detected") {
-          const li = document.createElement('li');
-          li.textContent = indicator;
-          list.appendChild(li);
-        }
-      });
+  // 4. Content Analysis via Content Script
+  chrome.tabs.sendMessage(tab.id, { action: "analyze_content" }, (response) => {
+    // Xử lý lỗi nếu content script không tồn tại trên trang (ví dụ trang cài đặt Chrome)
+    if (chrome.runtime.lastError) {
+      updateUI(triggeredIndicators, score);
+      return;
     }
-  );
+
+    const contentResults = response?.results || [];
+    contentResults.forEach(res => {
+      if (res && res !== "No anomaly detected") {
+        triggeredIndicators.push(res);
+        score += 15;
+      }
+    });
+
+    updateUI(triggeredIndicators, score);
+  });
 }
 
-// Execute analysis immediately when the popup is opened
-analyzeTab();
+function updateUI(indicators, score) {
+  const finalScore = Math.min(score, 100);
+  const scoreText = document.getElementById('score-text');
+  const barFill = document.getElementById('risk-bar-fill');
+  const severityLabel = document.getElementById('severity-label');
+  const list = document.getElementById('risk-list');
+  const countDisplay = document.getElementById('indicator-count');
+
+  // Animation cho con số
+  scoreText.textContent = finalScore;
+  barFill.style.width = `${finalScore}%`;
+  
+  // Xử lý Severity Level
+  if (finalScore < 30) {
+    barFill.className = 'bg-safe';
+    severityLabel.textContent = "LOW RISK";
+    severityLabel.style.color = "var(--success)";
+    scoreText.style.color = "var(--success)";
+  } else if (finalScore < 60) {
+    barFill.className = 'bg-warn';
+    severityLabel.textContent = "MEDIUM RISK";
+    severityLabel.style.color = "var(--warning)";
+    scoreText.style.color = "var(--warning)";
+  } else {
+    barFill.className = 'bg-danger';
+    severityLabel.textContent = "HIGH RISK";
+    severityLabel.style.color = "var(--danger)";
+    scoreText.style.color = "var(--danger)";
+  }
+
+  // Render danh sách lỗi
+  list.innerHTML = "";
+  if (indicators.length === 0) {
+    list.innerHTML = '<div style="font-size:11px; color:var(--success); text-align:center; padding:10px;">✓ Environment looks clean.</div>';
+  } else {
+    indicators.forEach(text => {
+      const item = document.createElement('div');
+      item.className = 'risk-item';
+      item.textContent = text;
+      list.appendChild(item);
+    });
+  }
+  countDisplay.textContent = `${indicators.length}/7`;
+}
+
+// Khởi chạy khi popup mở
+document.addEventListener('DOMContentLoaded', analyzeTab);

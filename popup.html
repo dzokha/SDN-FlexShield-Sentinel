@@ -1,121 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <style>
+    :root {
+      --bg-gradient: radial-gradient(circle at 50% 0%, #1e293b 0%, #0f172a 100%);
+      --card-bg: rgba(30, 41, 59, 0.6);
+      --primary: #38bdf8;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+
     body {
-      width: 280px; /* Tăng nhẹ chiều rộng để chứa logo đẹp hơn */
-      padding: 15px;
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f8f9fa;
+      width: 320px;
       margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      overflow-x: hidden;
     }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .logo-container {
-      margin-bottom: 12px;
-      padding: 5px;
-      background: white;
-      border-radius: 50%;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .logo-container img {
-      width: 60px;
-      height: 60px;
-      object-fit: contain;
-      display: block;
-    }
+
+    .container { padding: 16px; }
+
+    /* --- HEADER: BRANDING --- */
     .header {
-      width: 100%;
-      font-weight: bold;
-      color: #1a3a5a;
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 12px;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 15px;
     }
-    .info-box {
-      width: 100%;
-      background: white;
-      border-radius: 8px;
-      padding: 10px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+    .header img {
+      width: 32px;
+      height: 32px;
+      filter: drop-shadow(0 0 5px var(--primary));
     }
-    .info {
-      font-size: 14px;
-      margin-bottom: 10px;
-    }
-    .label {
-      color: #95a5a6;
-      font-size: 11px;
+
+    .header-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    .value {
-      color: #2c3e50;
-      word-break: break-all;
-      font-weight: 600;
-      margin-top: 2px;
-    }
-    #status {
-      width: 100%;
-      margin-top: 10px;
-      font-size: 12px;
-      padding: 8px;
-      border-radius: 6px;
+
+    /* --- SECTION A: RISK SCORE --- */
+    .summary-section {
       text-align: center;
-      font-weight: 500;
+      margin-bottom: 20px;
+      background: rgba(15, 23, 42, 0.4);
+      padding: 15px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.03);
     }
-    .secure { background: #e8f5e9; color: #2e7d32; border: 1px solid #c8e6c9; }
-    .insecure { background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; }
     
-    .footer {
-      margin-top: 15px;
-      font-size: 10px;
-      color: #bdc3c7;
-      text-align: center;
-      line-height: 1.4;
-      font-style: italic;
+    .score-circle {
+      font-size: 42px;
+      font-weight: 900;
+      margin: 5px 0;
+      transition: all 0.5s ease;
     }
+
+    .score-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+    }
+
+    .risk-bar-bg {
+      height: 4px;
+      background: #334155;
+      border-radius: 10px;
+      margin: 12px auto;
+      width: 80%;
+      overflow: hidden;
+    }
+
+    #risk-bar-fill {
+      height: 100%;
+      width: 0%;
+      transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* --- SECTION B: TARGET INFO --- */
+    .info-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 16px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      font-size: 11px;
+    }
+
+    .info-label { color: var(--text-muted); font-weight: 500; }
+    .info-value { font-family: 'JetBrains Mono', monospace; color: #fff; }
+
+    #status-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    /* --- SECTION C: INDICATORS --- */
+    .risk-header {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 4px;
+    }
+
+    .risk-item {
+      font-size: 11px;
+      padding: 8px 12px;
+      background: rgba(239, 68, 68, 0.08);
+      border-left: 3px solid var(--danger);
+      margin-bottom: 6px;
+      border-radius: 4px;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    /* --- FOOTER --- */
+    .footer {
+      text-align: center;
+      font-size: 9px;
+      color: var(--text-muted);
+      margin-top: 20px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer strong { color: var(--text-main); }
+    .footer a { color: var(--primary); text-decoration: none; font-weight: 600; }
+
+    /* Color States */
+    .bg-safe { background: var(--success); box-shadow: 0 0 10px var(--success); }
+    .bg-warn { background: var(--warning); box-shadow: 0 0 10px var(--warning); }
+    .bg-danger { background: var(--danger); box-shadow: 0 0 10px var(--danger); }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo-container">
-      <img src="images/logo.png" alt="SDN-FlexShield Logo">
+    <div class="header">
+      <img src="images/logo.png" alt="Logo">
+      <div class="header-title">SDN-FlexShield: Sentinel</div>
     </div>
 
-    <div class="header">SDN-FlexShield: Sentinel Module</div>
-    
-    <div class="info-box">
-      <div class="info">
-        <div class="label">Monitoring Target (Domain):</div>
-        <div id="domain" class="value">Scanning in progress...</div>
+    <div class="summary-section">
+      <div class="score-label">Risk Severity Score</div>
+      <div class="score-circle" id="score-text">0</div>
+      <div class="risk-bar-bg">
+        <div id="risk-bar-fill"></div>
       </div>
-
-      <div class="info">
-        <div class="label">Identified IP Address:</div>
-        <div id="ip" class="value">Resolving...</div>
-      </div>
-      
-      <div id="status">Protocol analysis in progress...</div>
-
-      <div class="label">Analysis of Seven Technical Risk Indicators</div>
-      <ul id="risk-list" style="font-size: 12px; color: #c62828; padding-left: 15px;">
-      </ul>
+      <div id="severity-label" style="font-size: 11px; font-weight: 900; letter-spacing: 1px;">ANALYZING...</div>
     </div>
+
+    <div class="info-card">
+      <div class="info-row">
+        <span class="info-label">TARGET</span>
+        <span id="domain" class="info-value">--</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">NODE IP</span>
+        <span id="ip" class="info-value">...</span>
+      </div>
+      <div id="status-badge" class="status-safe">Initializing...</div>
+    </div>
+
+    <div class="risk-header">
+      <span>TECHNICAL RISK INDICATORS</span>
+      <span id="indicator-count">0/7</span>
+    </div>
+    <div id="risk-list"></div>
 
     <div class="footer">
-      SDN-FlexShield Defender<br>
-      Author: Dzokha &mdash; Licensed under the MIT License
+      <strong>SDN-FlexShield Defender v1.0</strong><br>
+      Research Prototype | MIT License<br>
+      Developed by <a href="https://dzokha.vn" target="_blank">Dzokha</a>
     </div>
   </div>
-
   <script src="popup.js"></script>
 </body>
-
 </html>
