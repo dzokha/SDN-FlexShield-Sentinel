@@ -133,7 +133,7 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 - [ ] **Local Machine Learning** (TensorFlow.js) integration.  
 - [ ] **Risk Scoring Confidence Estimation**.
 
-## 🤝 Contributing & Authors
+## 👤 Author & License
 
 - **Kha Van Nguyen (Dzokha)** – Lead Developer  
 - **Quang Nhat Minh Truong**  
@@ -144,4 +144,4 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 
 ---
 
-*Developed with ❤️ for a safer web.*
+*In a world of opaque threats, Sentinel chooses transparency. Education is the best firewall.*
