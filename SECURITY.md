@@ -1,12 +1,13 @@
-🔐 Security Policy
+# 🔐 Security Policy 
 SDN-FlexShield: Sentinel
-📌 Scope
+
+## 📌 Scope
 
 This document describes the security posture, threat model, and responsible disclosure process for the SDN-FlexShield: Sentinel browser extension.
 
 SDN-FlexShield: Sentinel is a client-side, research-oriented security awareness tool designed to help users identify potential phishing risks through indicator-based analysis.
 
-🧠 Security Design Principles
+## 🧠 Security Design Principles
 
 The extension is developed according to the following core security principles:
 
@@ -34,7 +35,7 @@ No obfuscated or dynamically loaded code
 
 All security logic can be independently reviewed and verified
 
-🔍 Threat Model Overview
+## 🔍 Threat Model Overview
 
 SDN-FlexShield: Sentinel is designed to mitigate common client-side phishing risks, while explicitly avoiding behaviors that could introduce new threats.
 
@@ -69,7 +70,7 @@ Resolver usage is non-mandatory and can be disabled in future versions
 
 No other third-party services are used.
 
-⚠️ Known Limitations
+## ⚠️ Known Limitations
 
 Indicator-based heuristics may produce false positives or false negatives
 
@@ -79,7 +80,7 @@ Risk indicators are advisory, not enforcement mechanisms
 
 Results should be interpreted as security guidance, not absolute judgments
 
-🔒 Secure Development Practices
+## 🔒 Secure Development Practices
 
 The project follows these secure coding practices:
 
@@ -91,7 +92,7 @@ Defensive message handling between extension components
 
 Conservative error handling to avoid information leakage
 
-🧪 Security Testing
+## 🧪 Security Testing
 
 Current testing includes:
 
@@ -109,7 +110,7 @@ Indicator-based unit testing
 
 Reproducible evaluation datasets
 
-🚨 Reporting Security Vulnerabilities
+## 🚨 Reporting Security Vulnerabilities
 
 We encourage responsible disclosure of security vulnerabilities.
 
@@ -131,7 +132,7 @@ Potential impact assessment (if available)
 
 We aim to acknowledge reports in a timely manner and address confirmed issues responsibly.
 
-🔓 Security Through Transparency
+## 🔓 Security Through Transparency
 
 “Security is strengthened when systems are open to scrutiny.”
 
@@ -145,25 +146,22 @@ Propose improvements
 
 Use the project as a research or educational reference
 
-📚 Compliance & References
+## 📚 Compliance & References
 
 This project is conceptually aligned with:
 
-NIST SP 800-61 – Incident Handling & Indicators
-
-NIST SP 800-92 – Security Monitoring
-
-ENISA Phishing Threat Landscape
+- **NIST SP 800-61** – Incident Handling & Indicators
+- **NIST SP 800-92** – Security Monitoring
+- **ENISA** Phishing Threat Landscape
 
 MITRE ATT&CK – Initial Access (TA0001)
 
-👤 Maintainer
-
-Project Maintainer: Dzokha
-Project Type: Open-source research prototype
+## 👤 Maintainer
+- **Project Maintainer**: Kha Van Nguyen (Dzokha).
+- **Author Team**: Quang Nhat Minh Truong, Phuong Hoang Nguyen, Thang Quyet Le.
 License: MIT License
 
-🔑 Final Statement
+---
 
 SDN-FlexShield: Sentinel is designed to reduce risk, not to replace professional security solutions.
 Its primary goal is to improve user awareness through transparent and explainable security indicators.
