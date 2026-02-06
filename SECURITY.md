@@ -153,13 +153,12 @@ This project is conceptually aligned with:
 - **NIST SP 800-61** – Incident Handling & Indicators
 - **NIST SP 800-92** – Security Monitoring
 - **ENISA** Phishing Threat Landscape
-
-MITRE ATT&CK – Initial Access (TA0001)
+- **MITRE ATT&CK** – Initial Access (TA0001)
 
 ## 👤 Maintainer
 - **Project Maintainer**: Kha Van Nguyen (Dzokha).
 - **Author Team**: Quang Nhat Minh Truong, Phuong Hoang Nguyen, Thang Quyet Le.
-License: MIT License
+- **License**: MIT License
 
 ---
 
