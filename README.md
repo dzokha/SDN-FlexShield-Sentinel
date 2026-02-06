@@ -97,7 +97,7 @@ We adhere to the **Principle of Least Privilege**.
 
 ### Screenshot
 
-![SDN-FlexShield-Sentinel Interface](images/giaodien.png)
+![SDN-FlexShield-Sentinel Interface](assets/images/giaodien.png)
 
 ## 🏗️ Ecosystem Architecture
 Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosystem:
