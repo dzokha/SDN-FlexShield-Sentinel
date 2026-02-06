@@ -3,7 +3,7 @@ message: "If you use this software in your research, please cite it using the fo
 
 title: "SDN-FlexShield: Sentinel Module"
 version: "1.2"
-date-released: 2026-01-31
+date-released: 2026-02-06
 
 abstract: >
   SDN-FlexShield Sentinel is a browser-based security analysis module designed
@@ -16,13 +16,13 @@ authors:
   - family-names: Nguyen
     given-names: Kha Van
     alias: Dzokha
-    affiliation: Can Tho University
+    affiliation: Can Tho Department of Science and Technology, Can Tho, Vietnam
     email: dzokha1010@gmail.com
-    orcid: https://orcid.org/0009-0000-0000-0000
+    orcid: https://orcid.org/0000-0001-7056-2859
 
   - family-names: Truong
     given-names: Quang Nhat Minh
-    affiliation: Can Tho University
+    affiliation: College of Information Technology, Can Tho University of Technology, Can Tho, Vietnam
 
   - family-names: Nguyen
     given-names: Phuong Hoang
@@ -30,7 +30,7 @@ authors:
 
   - family-names: Le
     given-names: Thang Quyet
-    affiliation: Can Tho University
+    affiliation: College of Information and Communication Technology, Can Tho University, Can Tho, Vietnam
 
 keywords:
   - Cybersecurity Awareness
@@ -45,18 +45,3 @@ license: MIT
 
 repository-code: https://github.com/dzokha/SDN-FlexShield-Sentinel
 url: https://github.com/dzokha/SDN-FlexShield-Sentinel
-
-# preferred-citation:
-#   type: article
-#   authors:
-#     - family-names: Nguyen
-#       given-names: Kha Van
-#     - family-names: Nguyen
-#       given-names: Phuong Hoang
-#     - family-names: Le
-#       given-names: Thang Quyet
-#   title: "Cybersecurity Awareness: From Recognition to Safe Action in Digital Transformation"
-#   year: 2026
-
-
-# Nguyen, K. V., Truong, Q. N. M., Nguyen, P. H., & Le, T. Q. (2025). Cybersecurity Awareness: From Recognition to Safe Action in Digital Transformation
