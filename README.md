@@ -176,13 +176,12 @@ Upcoming Features:
 # 🤝 Contributing
 Contributions, reviews, and academic feedback are welcome! Please ensure all pull requests align with the project’s Privacy-First principles.
 
-#  Author & License
+## 👤 Author & License
 
-Author: Dzokha
+- **Author:** Dzokha  
+- **License:** MIT License  
+- **Copyright:** © 2025 Dzokha
 
-License: MIT License
-
-Copyright: © 2025 Dzokha
 
 
 
