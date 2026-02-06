@@ -6,11 +6,12 @@
   "description": "Thành phần giám sát điểm cuối thuộc hệ sinh thái SDN-FlexShield Defender. Hỗ trợ phát hiện xâm nhập và phân tích an toàn mạng trong kỷ nguyên chuyển đổi số.",
   
   "permissions": [
-    "activeTab",
+    "activeTab", // Used only to analyze the currently visited URL for security indicators
     "storage",
     "scripting",
     "tabs"
   ],
+
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
