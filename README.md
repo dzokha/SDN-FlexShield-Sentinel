@@ -96,7 +96,6 @@ We adhere to the **Principle of Least Privilege**.
 * Visit any website to see the analysis in action.
 
 ### Screenshot
-(Interface showing Risk Score and Detected Indicators)
 
 ![SDN-FlexShield-Sentinel Interface](images/giaodien.png)
 
@@ -127,8 +126,6 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 - **NIST SP 800-61**: Incident Handling Indicators.  
 - **MITRE ATT&CK**: [Initial Access (TA0001)] – Phishing.
 
----
-
 ## 🚧 Roadmap
 
 - [x] Heuristic-based static analysis.  
@@ -136,13 +133,8 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 - [ ] **Local Machine Learning** (TensorFlow.js) integration.  
 - [ ] **Risk Scoring Confidence Estimation**.
 
----
-
 ## 🤝 Contributing & Authors
 
-Contributions, reviews, and academic feedback are welcome!
-
-### Core Contributors:
 - **Kha Van Nguyen (Dzokha)** – Lead Developer  
 - **Quang Nhat Minh Truong**  
 - **Phuong Hoang Nguyen**  
