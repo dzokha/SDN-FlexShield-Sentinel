@@ -144,4 +144,5 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 
 ---
 
-*In a world of opaque threats, Sentinel chooses transparency. Education is the best firewall.*
+*In a landscape of opaque threats, Sentinel prioritizes transparency and understanding.
+Informed users are a critical layer of modern cybersecurity.*
