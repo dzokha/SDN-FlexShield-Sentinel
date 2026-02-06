@@ -115,22 +115,8 @@ Visit any website to see the analysis in action.
 ![SDN-FlexShield-Sentinel Interface](images/giaodien.png)
 
 
-🏗️ Ecosystem Architecture
+## 🏗️ Ecosystem Architecture
 Sentinel is the client-side component of the comprehensive SDN-FlexShield Defender ecosystem:
-
-graph TD
-    Defender[🛡️ SDN-FlexShield Defender]
-    Defender --> Sentinel(Sentinel: User-Side Plugin)
-    Defender --> Console(Console: SOC Operations)
-    Defender --> Enforcer(Enforcer: SDN Router Control)
-    Defender --> Core(Core: Central Backend)
-    Defender --> HoneyCore(HoneyCore: Deception/Honeynet)
-    Defender --> AegisAI(AegisAI: AI Prediction Engine)
-    Defender --> Audit(Audit: Forensic & Compliance)
-
-# SDN-FlexShield Defender Ecosystem Architecture
-
-Sentinel is a component of the multi-layer security architecture of SDN-FlexShield Defender:
 
 - **SDN-FlexShield Defender**
   - **SDN-FlexShield-Sentinel** – End-user monitoring and alerting plugin
@@ -141,13 +127,7 @@ Sentinel is a component of the multi-layer security architecture of SDN-FlexShie
   - **SDN-FlexShield-AegisAI** – AI engine for analysis and prediction
   - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
 
-Sentinel: End-user monitoring and alerting (This Repo).
-
-Console: Desktop app for SOC administration.
-
-AegisAI: Advanced machine learning for threat prediction.
-
-# 📚 Scientific Background
+## 📚 Scientific Background
 This tool is a research prototype supporting the study of Human-Centric Cybersecurity.
 
 Primary Citation:
@@ -160,7 +140,7 @@ NIST SP 800-61: Incident Handling Indicators.
 
 MITRE ATT&CK: Initial Access (TA0001) - Phishing.
 
-# 🚧 Limitations & Roadmap
+## 🚧 Limitations & Roadmap
 Heuristic-based: Currently relies on static rules, prone to False Positives on complex legitimate sites.
 
 No Blocking: The tool warns but does not block traffic (intended for educational/awareness purposes).
@@ -173,7 +153,7 @@ Upcoming Features:
 
 [ ] Risk Scoring Confidence Estimation.
 
-# 🤝 Contributing
+## 🤝 Contributing
 Contributions, reviews, and academic feedback are welcome! Please ensure all pull requests align with the project’s Privacy-First principles.
 
 ## 👤 Author & License
