@@ -83,4 +83,4 @@ Dự án này được xây dựng dựa trên các nghiên cứu đã được 
 
 ---
 
-Trong bối cảnh các mối đe dọa an ninh mạng ngày càng tinh vi và khó nhận diện, SDN-FlexShield: Sentinel đề cao sự minh bạch và hiểu biết. Người dùng được trang bị kiến thức chính là tuyến phòng thủ quan trọng nhất của an ninh mạng hiện đại.
+*Trong bối cảnh các mối đe dọa an ninh mạng ngày càng tinh vi và khó nhận diện, SDN-FlexShield: Sentinel đề cao sự minh bạch và hiểu biết. Người dùng được trang bị kiến thức chính là tuyến phòng thủ quan trọng nhất của an ninh mạng hiện đại.*
