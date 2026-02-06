@@ -16,12 +16,12 @@
 The extension focuses on **early phishing risk detection** and delivers interpretable security warnings (XAI - Explainable AI) to support safer online behavior. Unlike blacklist-based or opaque detection tools, Sentinel emphasizes transparency, explainability, and privacy-by-design.
 
 ### 🎯 Design Goals
-| Goal | Description |
-| :--- | :--- |
-| **🔍 Explainable Security** | Provides clear, human-readable risk indicators so users understand *why* a site is risky. |
-| **🔒 Privacy First** | No user data collection, tracking, or exfiltration. Analysis happens locally. |
-| **🧠 Client-Side Analysis** | Zero dependency on backend servers for real-time analysis. |
-| **🧪 Research-Oriented** | Built as a baseline system for academic study and AI-enhanced extension. |
+| Goal                      | Description   |
+| :---                      | :---          |
+| **Explainable Security**  | Provides clear, human-readable risk indicators so users understand *why* a site is risky. |
+| **Privacy First**         | No user data collection, tracking, or exfiltration. Analysis happens locally. |
+| **Client-Side Analysis**  | Zero dependency on backend servers for real-time analysis.                    |
+| **Research-Oriented**     | Built as a baseline system for academic study and AI-enhanced extension.      |
 
 ## 🧠 Core Features & Detection Framework
 
@@ -29,25 +29,25 @@ Sentinel analyzes the currently visited website using a set of **seven technical
 
 ### The 7-Point Indicator System
 
-1.  **🌐 Domain Integrity**
-2.  **🔗 URL Analysis**
-3.  **🔐 SSL/TLS Verification**
-4.  **📝 Web Form Security**
-5.  **🎨 Content Consistency**
-6.  **⚡ DOM & Script Behavior**
-7.  **💬 Social Engineering Language**
+1.  **Domain Analysis**
+2.  **URL & Link Analysis**
+3.  **SSL/TLS Certificate**
+4.  **Form Analysis**
+5.  **Content Analysis**
+6.  **Source Code & DOM Structure**
+7.  **Language and Keyword Frequency Analysis**
 
 
 ## 🔐 Privacy & Data Protection
 
 We adhere to the **Principle of Least Privilege**.
 
-| ✅ What Sentinel DOES | ❌ What Sentinel DOES NOT Do |
-| :--- | :--- |
-| Analyzes URLs locally within the browser instance. | ❌ Collect browsing history. |
-| Displays security indicators in real-time. | ❌ Store, transmit, or sell user data. |
-| Optionally resolves DNS via public DoH (DNS-over-HTTPS). | ❌ Track user behavior or analytics. |
-| | ❌ Communicate with proprietary backend servers. |
+| ✅ What Sentinel DOES                                   | ❌ What Sentinel DOES NOT Do                     |
+| :---                                                    | :---                                             |
+| Analyzes URLs locally within the browser instance.      | ❌ Collect browsing history.                     |
+| Displays security indicators in real-time.              | ❌ Store, transmit, or sell user data.           |
+| Optionally resolves DNS via public DoH (DNS-over-HTTPS).| ❌ Track user behavior or analytics.             |
+|                                                         | ❌ Communicate with proprietary backend servers. |
 
 > **Security Note:** No user data ever leaves the browser environment. All logic is transparent and auditable.
 
