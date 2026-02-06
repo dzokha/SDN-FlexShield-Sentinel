@@ -106,7 +106,7 @@ We adhere to the **Principle of Least Privilege**.
 ## 🏗️ Ecosystem Architecture
 Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosystem:
 
-### 🧩 System Components
+### System Components
 
 | Component          | Role                                                                 |
 |--------------------|----------------------------------------------------------------------|
