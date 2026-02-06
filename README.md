@@ -1,5 +1,5 @@
 
-# 🛡️ SDN-FlexShield: Sentinel
+# SDN-FlexShield: Sentinel
 
 **Client-side, Indicator-based Phishing Awareness Browser Extension**
 

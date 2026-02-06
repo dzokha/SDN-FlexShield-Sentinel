@@ -1,8 +1,8 @@
-# 🛡️ SDN-FlexShield: Sentinel
+# SDN-FlexShield: Sentinel
 
 **Tiện ích trình duyệt phân tích chỉ số nhận diện tấn công giả mạo (Phishing) phía máy khách**
 
-🌐 **Xem tài liệu bằng ngôn ngữ khác:** [🇺🇸 English](README.md)
+**Xem tài liệu bằng ngôn ngữ khác:** [🇺🇸 English](README.md)
 
 ## Tổng quan
 
@@ -14,7 +14,7 @@ Khác với các giải pháp dựa trên blacklist hoặc các mô hình học 
 
 ---
 
-## 🎯 Mục tiêu & Phạm vi
+## Mục tiêu & Phạm vi
 
 SDN-FlexShield: Sentinel hướng tới việc cung cấp một công cụ **phân tích rủi ro phishing phía máy khách**, có khả năng giải thích, nhằm hỗ trợ nâng cao nhận thức an ninh mạng cho người dùng cá nhân, sinh viên và nhà nghiên cứu.
 
@@ -22,7 +22,7 @@ Hệ thống được thiết kế để hoạt động **hoàn toàn trong môi
 
 ---
 
-## 🧪 Phương pháp & Cách tiếp cận
+## Phương pháp & Cách tiếp cận
 
 Hệ thống áp dụng phương pháp **phân tích tĩnh dựa trên heuristic**, kết hợp nhiều chỉ số kỹ thuật và hành vi để xây dựng **cơ chế chấm điểm rủi ro minh bạch**. Toàn bộ quá trình phân tích và suy luận được thực hiện trực tiếp trong trình duyệt, cho phép người dùng quan sát và hiểu rõ nguyên nhân dẫn đến các cảnh báo bảo mật.
 
@@ -30,22 +30,22 @@ Cách tiếp cận này đặc biệt phù hợp cho các mục tiêu **giáo d�
 
 ---
 
-## 🧠 Tính năng cốt lõi & Khung phát hiện
+## Tính năng cốt lõi & Khung phát hiện
 
-SDN-FlexShield: Sentinel phân tích trang web đang truy cập dựa trên **bảy chỉ số nhận diện rủi ro**, được xây dựng từ các kỹ thuật tấn công phishing phổ biến và ánh xạ với giai đoạn **Initial Access (TA0001)** trong khung **MITRE ATT&CK**.
+SDN-FlexShield: Sentinel phân tích trang web đang truy cập dựa trên **bảy chỉ số nhận diện rủi ro** có thể quam sát trực tiếp trên trình duyệt.
 
-### Hệ thống 7 Chỉ số Nhận diện
+### Hệ thống 7 Chỉ số Nhận diện rủi ro
 
-1. **🌐 Tính toàn vẹn của tên miền (Domain Integrity)**  
-2. **🔗 Phân tích cấu trúc URL**  
-3. **🔐 Trạng thái xác thực SSL/TLS**  
-4. **📝 Mức độ an toàn của biểu mẫu web (Web Form Security)**  
-5. **🎨 Tính nhất quán của nội dung và giao diện**  
-6. **⚡ Hành vi DOM và mã kịch bản (Script Behavior)**  
-7. **💬 Dấu hiệu ngôn ngữ thao túng tâm lý (Social Engineering Indicators)** 
+1. **Phân tích tên miền (Domain Analysis)**  
+2. **Phân tích đường dẫn và liên kết (URL & Link Analysis)**  
+3. **Phân tích chứng chỉ bảo mật (SSL/TLS Certificate)**  
+4. **Phân tích biểu mẫu (Form Analysis)**  
+5. **Phân tích nội dung văn bản (Content Analysis)**  
+6. **Phân tích mã nguồn và cấu trúc DOM (Source Code & DOM Structure)**  
+7. **Phân tích ngôn ngữ và tần suất từ khóa (Language and Keyword Frequency Analysis)** 
 
 
-## 🚀 Hướng dẫn cài đặt
+## Hướng dẫn cài đặt
 
 ### Bước 1: Tải mã nguồn
 * Sao chép kho lưu trữ hoặc tải xuống tệp ZIP: `git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git`
@@ -63,7 +63,7 @@ SDN-FlexShield: Sentinel phân tích trang web đang truy cập dựa trên **b�
 * Truy cập bất kỳ trang web nào để xem hệ thống phân tích theo thời gian thực.
 
 
-## 📚 Cơ sở khoa học & Tiêu chuẩn
+## Cơ sở khoa học & Tiêu chuẩn
 Dự án này được xây dựng dựa trên các nghiên cứu đã được bình duyệt và các tiêu chuẩn an ninh mạng quốc tế.
 
 ### Công bố liên quan
@@ -74,7 +74,7 @@ Dự án này được xây dựng dựa trên các nghiên cứu đã được 
 - **MITRE ATT&CK:** [Initial Access (TA0001)] – Phishing.
 
 
-## 👤 Tác giả
+## Tác giả
 
 - **Nguyễn Văn Kha (Dzokha)**
 - **Trương Minh Nhật Quang**
