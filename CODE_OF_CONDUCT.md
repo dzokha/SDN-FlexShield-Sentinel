@@ -103,11 +103,9 @@ Decisions are made based on the **severity and context** of the behavior.
 ---
 
 ## 👤 Maintainer
-
-- **Project Maintainer:** Dzokha  
-- **Project Type:** Open-source research prototype  
-- **License:** MIT License  
-
+- **Project Maintainer**: Kha Van Nguyen (Dzokha).
+- **Author Team**: Quang Nhat Minh Truong, Phuong Hoang Nguyen, Thang Quyet Le.
+- **License**: MIT License
 ---
 
 ## 🔑 Final Statement
