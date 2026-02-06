@@ -4,11 +4,13 @@
 
 🌐 **Xem tài liệu bằng ngôn ngữ khác:** [🇺🇸 English](README.md)
 
-## 📌 Tổng quan
+## Tổng quan
 
-**SDN-FlexShield: Sentinel** là một tiện ích trình duyệt mã nguồn mở, được thiết kế nhằm nâng cao nhận thức về an ninh mạng cho người dùng cuối thông qua cơ chế phân tích rủi ro trực tiếp phía máy khách. Hệ thống thực hiện đánh giá các trang web đang truy cập dựa trên tập hợp các chỉ số kỹ thuật và hành vi, không phụ thuộc vào máy chủ trung tâm hay các dịch vụ danh sách đen tập trung.
+**SDN-FlexShield: Sentinel** là một tiện ích trình duyệt mã nguồn mở, được xây dựng nhằm nâng cao nhận thức về an ninh mạng cho người dùng cuối. Tiện ích phân tích mức độ rủi ro của các trang web ngay trong trình duyệt, dựa trên các chỉ số kỹ thuật và hành vi phổ biến, mà không cần phụ thuộc vào máy chủ trung tâm hay các dịch vụ danh sách đen bên ngoài.
 
-Tiện ích tập trung vào việc **phát hiện sớm nguy cơ lừa đảo (phishing)** và cung cấp **cảnh báo bảo mật có khả năng giải thích**, từ đó hỗ trợ người dùng đưa ra quyết định trực tuyến an toàn hơn. Khác với các giải pháp dựa trên blacklist hoặc các mô hình học máy dạng “hộp đen”, Sentinel nhấn mạnh vào **tính minh bạch, khả năng diễn giải và bảo vệ quyền riêng tư ngay từ khâu thiết kế (privacy-by-design)**.
+Hệ thống tập trung vào việc **phát hiện sớm các nguy cơ lừa đảo (phishing)** và cung cấp **cảnh báo bảo mật kèm theo giải thích dễ hiểu**. Thay vì chỉ thông báo rằng một trang web “đáng ngờ”, Sentinel giúp người dùng hiểu vì sao cảnh báo được đưa ra, thông qua các dấu hiệu cụ thể như tuổi đời tên miền, cấu trúc URL bất thường hoặc vấn đề liên quan đến chứng chỉ bảo mật.
+
+Khác với các giải pháp dựa trên blacklist hoặc các mô hình học máy dạng “hộp đen”, Sentinel nhấn mạnh vào **tính minh bạch, khả năng diễn giải và bảo vệ quyền riêng tư ngay từ thiết kế (privacy-by-design)**. Cách tiếp cận này không chỉ hỗ trợ người dùng đưa ra quyết định trực tuyến an toàn hơn, mà còn giúp họ dần hình thành nhận thức và thói quen an ninh mạng bền vững.
 
 ---
 

@@ -7,13 +7,11 @@
 [![Project Type](https://img.shields.io/badge/Project-Research%20Prototype-blueviolet)](https://dzokha.vn)
 [![Platform](https://img.shields.io/badge/Platform-Chrome%20Extension-blue)](https://www.google.com/chrome/)
 
-🌐 **Read this documentation in:** [🇻🇳 Tiếng Việt](README.vi.md)
+**Read this documentation in:** [🇻🇳 Tiếng Việt](README.vi.md)
 
-## 📌 Overview
+## Overview
 
-**SDN-FlexShield: Sentinel** is an open-source browser extension designed to enhance end-user cybersecurity awareness by performing **client-side, indicator-based analysis** of visited websites.
-
-The extension focuses on **early phishing risk detection** and delivers interpretable security warnings (XAI - Explainable AI) to support safer online behavior. Unlike blacklist-based or opaque detection tools, Sentinel emphasizes transparency, explainability, and privacy-by-design.
+**SDN-FlexShield: Sentinel** is an open-source browser extension designed to improve user cybersecurity awareness by providing explainable phishing warnings directly on the client side. Instead of simply flagging suspicious websites, the system explains why a warning is triggered using interpretable security indicators, helping users better understand online risks and make safer decisions.
 
 ### Design Goals
 | Goal                      | Description   |
@@ -23,7 +21,7 @@ The extension focuses on **early phishing risk detection** and delivers interpre
 | **Client-Side Analysis**  | Zero dependency on backend servers for real-time analysis.                    |
 | **Research-Oriented**     | Built as a baseline system for academic study and AI-enhanced extension.      |
 
-## 🧠 Core Features & Detection Framework
+## Core Features & Detection Framework
 
 Sentinel analyzes the currently visited website using a set of **seven technical risk indicators** derived from common phishing and web-based attack techniques (aligned with MITRE ATT&CK TA0001).
 
@@ -38,7 +36,7 @@ Sentinel analyzes the currently visited website using a set of **seven technical
 7.  **Language and Keyword Frequency Analysis**
 
 
-## 🔐 Privacy & Data Protection
+## Privacy & Data Protection
 
 We adhere to the **Principle of Least Privilege**.
 
@@ -51,7 +49,7 @@ We adhere to the **Principle of Least Privilege**.
 
 > **Security Note:** No user data ever leaves the browser environment. All logic is transparent and auditable.
 
-## 🚀 Installation Guide
+## Installation Guide
 
 ### Step 1: Get the Source Code
 * Clone the repository or download the ZIP file: `git clone https://github.com/dzokha/SDN-FlexShield-Sentinel.git`
@@ -72,7 +70,7 @@ We adhere to the **Principle of Least Privilege**.
 
 ![SDN-FlexShield-Sentinel Interface](assets/images/giaodien.png)
 
-## 🏗️ Ecosystem Architecture
+## Ecosystem Architecture
 Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosystem:
 
 ### System Components
@@ -85,7 +83,7 @@ Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosy
 | **Core (AegisAI)** | Central backend with AI-driven analysis and prediction.              |
 | **HoneyCore**      | Honeynet and deception environment for threat intelligence.          |
 
-## 📚 Scientific Background & Standards
+## Scientific Background & Standards
 
 This work is grounded in peer-reviewed research and global cybersecurity standards.
 
@@ -96,14 +94,14 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 - **NIST SP 800-61**: Incident Handling Indicators.  
 - **MITRE ATT&CK**: [Initial Access (TA0001)] – Phishing.
 
-## 🚧 Roadmap
+## Roadmap
 
 - [x] Heuristic-based static analysis.  
 - [ ] **IDN Homograph** attack detection.  
 - [ ] **Local Machine Learning** (TensorFlow.js) integration.  
 - [ ] **Risk Scoring Confidence Estimation**.
 
-## 👤 Author & License
+## Author & License
 
 - **Kha Van Nguyen (Dzokha)** – Lead Developer  
 - **Quang Nhat Minh Truong**  
