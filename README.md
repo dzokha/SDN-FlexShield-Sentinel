@@ -9,8 +9,6 @@
 
 🌐 **Read this documentation in:** [🇻🇳 Tiếng Việt](README.vi.md)
 
----
-
 ## 📌 Overview
 
 **SDN-FlexShield: Sentinel** is an open-source browser extension designed to enhance end-user cybersecurity awareness by performing **client-side, indicator-based analysis** of visited websites.
@@ -25,8 +23,6 @@ The extension focuses on **early phishing risk detection** and delivers interpre
 | **🧠 Client-Side Analysis** | Zero dependency on backend servers for real-time analysis. |
 | **🧪 Research-Oriented** | Built as a baseline system for academic study and AI-enhanced extension. |
 
----
-
 ## 🧠 Core Features & Detection Framework
 
 Sentinel analyzes the currently visited website using a set of **seven technical risk indicators** derived from common phishing and web-based attack techniques (aligned with MITRE ATT&CK TA0001).
@@ -34,34 +30,13 @@ Sentinel analyzes the currently visited website using a set of **seven technical
 ### The 7-Point Indicator System
 
 1.  **🌐 Domain Integrity**
-    * Analyzes domain name structures to detect typosquatting.
-    * Flags the use of raw IP addresses (e.g., `192.168.x.x`) instead of legitimate domain names.
-
 2.  **🔗 URL Analysis**
-    * Identifies suspicious URL patterns and obfuscation techniques.
-    * Detects special character misuse (e.g., `@` for credential hiding) and complex URL encoding.
-
 3.  **🔐 SSL/TLS Verification**
-    * Verifies digital certificates status.
-    * Issues high-severity warnings for websites using unencrypted HTTP connections.
-
 4.  **📝 Web Form Security**
-    * Detects insecure data transmission in `<form>` elements.
-    * Alerts when forms collecting sensitive data submit to cross-origin or untrusted domains.
-
 5.  **🎨 Content Consistency**
-    * Evaluates visual and textual elements (Logo, Page Title).
-    * Detects unauthorized hotlinking or UI spoofing techniques.
-
 6.  **⚡ DOM & Script Behavior**
-    * Monitors client-side script anomalies.
-    * Flags automatic redirections, deceptive pop-ups, or clickjacking attempts.
-
 7.  **💬 Social Engineering Language**
-    * Identifies psychological manipulation keywords commonly used in phishing.
-    * *Keywords example:* "Account suspended", "Urgent action required", "Verify immediately".
 
----
 
 ## 🔐 Privacy & Data Protection
 
@@ -75,8 +50,6 @@ We adhere to the **Principle of Least Privilege**.
 | | ❌ Communicate with proprietary backend servers. |
 
 > **Security Note:** No user data ever leaves the browser environment. All logic is transparent and auditable.
-
----
 
 ## 🚀 Installation Guide
 
