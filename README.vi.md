@@ -2,15 +2,14 @@
 
 **Tiện ích trình duyệt phân tích chỉ số nhận diện tấn công giả mạo (Phishing) phía máy khách**
 
-🌐 Xem tài liệu bằng ngôn ngữ khác: 🇺🇸 English
+🌐 **Xem tài liệu bằng ngôn ngữ khác:** [🇺🇸 English](README.md)
 
 ## 📌 Tổng quan
 SDN-FlexShield: Sentinel là một tiện ích trình duyệt mã nguồn mở được thiết kế để nâng cao nhận thức về an ninh mạng cho người dùng cuối. Công cụ này thực hiện phân tích dựa trên các chỉ số rủi ro trực tiếp phía máy khách đối với các trang web đang truy cập.
 
 Tiện ích tập trung vào việc phát hiện sớm rủi ro lừa đảo và đưa ra các cảnh báo bảo mật có thể giải thích được (XAI - Explainable AI) nhằm hỗ trợ hành vi trực tuyến an toàn hơn. Khác với các công cụ sử dụng danh sách đen (blacklist) hoặc các thuật toán đóng, Sentinel nhấn mạnh vào tính minh bạch, khả năng giải thích và quyền riêng tư ngay từ khâu thiết kế (Privacy-by-design).
 
-🎯 Mục tiêu thiết kế
-🧠 Tính năng cốt lõi & Khung phát hiện
+## 🧠 Tính năng cốt lõi & Khung phát hiện
 Sentinel phân tích trang web hiện tại thông qua bộ bảy chỉ số rủi ro kỹ thuật được đúc kết từ các kỹ thuật tấn công lừa đảo phổ biến (tương ứng với khung MITRE ATT&CK TA0001).
 
 ### Hệ thống 7 Chỉ số Nhận diện
@@ -60,36 +59,28 @@ Sentinel phân tích trang web hiện tại thông qua bộ bảy chỉ số r�
 ## 🏗️ Kiến trúc hệ sinh thái
 Sentinel là lớp bảo vệ chủ động phía người dùng thuộc hệ sinh thái SDN-FlexShield Defender:
 
-📚 Cơ sở khoa học & Tiêu chuẩn
+## 📚 Cơ sở khoa học & Tiêu chuẩn
 Dự án này được xây dựng dựa trên các nghiên cứu đã được bình duyệt và các tiêu chuẩn an ninh mạng quốc tế.
 
-Công bố liên quan
-Nguyễn Văn Kha, Nguyễn Hoàng Phương, Lê Quyết Thắng. “Nâng cao nhận thức an toàn thông tin: Từ nhận diện đến hành động an toàn trong chuyển đổi số.”
+### Công bố liên quan
+- **Nguyễn Văn Kha, Nguyễn Hoàng Phương, Lê Quyết Thắng**. *“Nâng cao nhận thức an toàn thông tin: Từ nhận diện đến hành động an toàn trong chuyển đổi số.”*
 
-Tuân thủ tiêu chuẩn
-NIST SP 800-61: Các chỉ số xử lý sự cố.
-
-MITRE ATT&CK: [Initial Access (TA0001)] – Phishing.
+### Tuân thủ tiêu chuẩn
+- **NIST SP 800-61:** Các chỉ số xử lý sự cố.
+- **MITRE ATT&CK:** [Initial Access (TA0001)] – Phishing.
 
 ## 🚧 Lộ trình phát triển
-[x] Phân tích tĩnh dựa trên các chỉ số nhận diện rủi ro (Heuristic).
-
-[ ] Phát hiện tấn công giả mạo tên miền bằng ký tự đồng hình (IDN Homograph).
-
-[ ] Tích hợp máy học cục bộ (Local Machine Learning) qua TensorFlow.js.
-
-[ ] Ước tính độ tin cậy của điểm số rủi ro.
+* [x] Phân tích tĩnh dựa trên các chỉ số nhận diện rủi ro (Heuristic).
+* [ ] Phát hiện tấn công giả mạo tên miền bằng ký tự đồng hình (IDN Homograph).
+* [ ] Tích hợp máy học cục bộ (Local Machine Learning) qua TensorFlow.js.
+* [ ] Ước tính độ tin cậy của điểm số rủi ro.
 
 ## 👤 Tác giả & Giấy phép
-Nguyễn Văn Kha (Dzokha) – Trưởng nhóm phát triển
-
-Trương Quang Nhật Minh
-
-Nguyễn Hoàng Phương
-
-Lê Quyết Thắng
-
-Giấy phép: Được phân phối theo Giấy phép MIT.
+- **Nguyễn Văn Kha (Dzokha)**
+- **Trương Quang Nhật Minh**
+- **Nguyễn Hoàng Phương**
+- **Lê Quyết Thắng**
+**Giấy phép:** Được phân phối theo **Giấy phép MIT.**
 
 ---
 
