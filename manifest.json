@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["src/content/content.js"]
     }
   ],
 
@@ -24,21 +24,22 @@
   ],
 
   "icons": {
-    "16": "images/logo.png",
-    "48": "images/logo.png",
-    "128": "images/logo.png"
+    "16": "assets/images/logo.png",
+    "48": "assets/images/logo.png",
+    "128": "assets/images/logo.png"
   },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/popup/popup.html",
     "default_title": "SDN-FlexShield: Sentinel Monitor",
     "default_icon": {
-      "16": "images/logo.png",
-      "48": "images/logo.png",
-      "128": "images/logo.png"
+      "16": "assets/images/logo.png",
+      "48": "assets/images/logo.png",
+      "128": "assets/images/logo.png"
     }
   },
 
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background/service-worker.js",
+    "type": "module" 
   }
 }
