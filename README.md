@@ -103,22 +103,22 @@ We adhere to the **Principle of Least Privilege**.
 
 ![SDN-FlexShield-Sentinel Interface](images/giaodien.png)
 
-
 ## 🏗️ Ecosystem Architecture
-Sentinel is the client-side component of the comprehensive SDN-FlexShield Defender ecosystem:
+Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosystem:
 
-- **SDN-FlexShield Defender**
-  - **SDN-FlexShield-Sentinel** – End-user monitoring and alerting plugin
-  - **SDN-FlexShield-Console** – Desktop application for SOC operations and administration
-  - **SDN-FlexShield-Enforcer** – Router / SDN Controller enforcement module
-  - **SDN-FlexShield-Core** – Central server / backend system
-  - **SDN-FlexShield-HoneyCore** – Honeynet and deception environment
-  - **SDN-FlexShield-AegisAI** – AI engine for analysis and prediction
-  - **SDN-FlexShield-Audit** – Forensic, Audit & Compliance
+### 🧩 System Components
+
+| Component          | Role                                                                 |
+|--------------------|----------------------------------------------------------------------|
+| **Sentinel**       | User-side monitoring, alerting & awareness plugin.                   |
+| **Console**        | Desktop application for SOC operations and administration.           |
+| **Enforcer**       | Router / SDN Controller enforcement module.                          |
+| **Core / AegisAI** | Central backend with AI-driven analysis and prediction.              |
+| **HoneyCore**      | Honeynet and deception environment for threat intelligence.          |
 
 ---
 
-📊 ## Scientific Background & Standards
+## 📚 Scientific Background & Standards
 
 This work is grounded in peer-reviewed research and global cybersecurity standards.
 
@@ -132,7 +132,7 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 
 ---
 
-🛣️ ## Roadmap
+## 🚧 Roadmap
 
 - [x] Heuristic-based static analysis.  
 - [ ] **IDN Homograph** attack detection.  
@@ -141,7 +141,7 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 
 ---
 
-🤝 ## Contributing & Authors
+## 🤝 Contributing & Authors
 
 Contributions, reviews, and academic feedback are welcome!
 
