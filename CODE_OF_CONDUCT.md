@@ -1,118 +1,117 @@
-📜 Code of Conduct
-SDN-FlexShield: Sentinel
-📌 Our Pledge
+# 📜 Code of Conduct  
+**SDN-FlexShield: Sentinel**
 
-We, as contributors and maintainers of SDN-FlexShield: Sentinel, pledge to foster an open, respectful, inclusive, and harassment-free environment for everyone involved in this project, regardless of background, experience, or affiliation.
+---
 
-This project is rooted in academic integrity, technical rigor, and ethical responsibility within the cybersecurity community.
+## 📌 Our Pledge
 
-🤝 Expected Behavior
+We, as contributors and maintainers of **SDN-FlexShield: Sentinel**, pledge to foster an **open, respectful, inclusive, and harassment-free environment** for everyone involved in this project, regardless of background, experience, or affiliation.
 
-Participants in this project are expected to:
+This project is rooted in **academic integrity, technical rigor, and ethical responsibility** within the cybersecurity community.
 
-Communicate respectfully and professionally
+---
 
-Be considerate of different perspectives and experiences
+## 🤝 Expected Behavior
 
-Provide constructive feedback grounded in evidence and reasoning
+Participants are expected to:
 
-Respect intellectual property and academic standards
+- Communicate respectfully and professionally
+- Be considerate of different perspectives and experiences
+- Provide constructive feedback grounded in evidence and reasoning
+- Respect intellectual property and academic standards
+- Act in good faith when discussing security-related topics
+- Focus discussions on technical merit, not personal attributes
 
-Act in good faith when discussing security-related topics
+---
 
-Focus discussions on technical merit, not personal attributes
-
-🚫 Unacceptable Behavior
+## 🚫 Unacceptable Behavior
 
 The following behaviors are not acceptable:
 
-Harassment, discrimination, or personal attacks
+- Harassment, discrimination, or personal attacks
+- Offensive, derogatory, or demeaning language
+- Trolling, flame wars, or intentionally disruptive behavior
+- Sharing private information without explicit consent
+- Publishing unverified security claims or misinformation
+- Plagiarism or misrepresentation of authorship
 
-Offensive, derogatory, or demeaning language
+---
 
-Trolling, flame wars, or intentionally disruptive behavior
+## 🛡️ Security & Responsible Disclosure
 
-Sharing private information without consent
+- Security vulnerabilities **must be reported privately**, as described in `SECURITY.md`
+- Public disclosure of unverified vulnerabilities is discouraged
+- Ethical conduct is required when discussing security risks
 
-Publishing unverified security claims or misinformation
+---
 
-Plagiarism or misrepresentation of authorship
-
-🛡️ Security & Responsible Disclosure
-
-Security vulnerabilities should be reported privately, as described in SECURITY.md
-
-Public disclosure of unverified vulnerabilities is discouraged
-
-Ethical conduct is required when discussing security risks
-
-🧪 Academic and Research Integrity
+## 🧪 Academic & Research Integrity
 
 Contributors must:
 
-Properly cite external research and references
+- Properly cite external research and references
+- Avoid inclusion of proprietary or copyrighted materials
+- Clearly distinguish original work from referenced material
+- Uphold ethical research and publication standards
 
-Avoid inclusion of proprietary or copyrighted materials
+---
 
-Clearly distinguish original work from referenced material
-
-Uphold ethical research standards
-
-🧭 Enforcement Responsibilities
+## 🧭 Enforcement Responsibilities
 
 Project maintainers are responsible for:
 
-Clarifying standards of acceptable behavior
+- Clarifying standards of acceptable behavior
+- Taking appropriate and fair corrective action
+- Removing or editing contributions that violate this Code of Conduct
+- Temporarily or permanently restricting participation for misconduct
 
-Taking appropriate and fair corrective action
+---
 
-Removing or editing contributions that violate this Code of Conduct
-
-Temporarily or permanently banning participants who engage in misconduct
-
-⚖️ Scope
+## ⚖️ Scope
 
 This Code of Conduct applies to:
 
-All project spaces (GitHub issues, pull requests, discussions)
+- All project spaces (GitHub issues, pull requests, discussions)
+- All forms of communication related to the project
+- Any public representation of the project
 
-All forms of communication related to the project
+---
 
-Any representation of the project in public forums
-
-🚨 Reporting Violations
+## 🚨 Reporting Violations
 
 If you experience or witness behavior that violates this Code of Conduct:
 
-Contact the project maintainer privately
+- Contact the project maintainer **privately**
+- Provide as much detail as possible to support a fair review
 
-Provide as much detail as possible to facilitate a fair review
+All reports will be handled **confidentially**.  
+Retaliation against reporters will **not be tolerated**.
 
-All reports will be handled confidentially
+---
 
-Retaliation against reporters will not be tolerated.
-
-🔄 Enforcement Guidelines
+## 🔄 Enforcement Guidelines
 
 Maintainers may take actions including, but not limited to:
 
-Issuing a warning
+- Issuing a warning
+- Requesting changes or apologies
+- Temporarily restricting participation
+- Permanent removal from the project community
 
-Requesting changes or apologies
+Decisions are made based on the **severity and context** of the behavior.
 
-Temporarily restricting participation
+---
 
-Permanent removal from the project community
+## 👤 Maintainer
 
-Decisions will be made based on the severity and context of the behavior.
+- **Project Maintainer:** Dzokha  
+- **Project Type:** Open-source research prototype  
+- **License:** MIT License  
 
-👤 Maintainer
+---
 
-Project Maintainer: Dzokha
-Project Type: Open-source research prototype
-License: MIT License
+## 🔑 Final Statement
 
-🔑 Final Statement
+A respectful and ethical community is essential to building **trustworthy security tools**.
 
-A respectful and ethical community is essential to building trustworthy security tools.
-This Code of Conduct exists to ensure SDN-FlexShield: Sentinel remains a constructive and professional environment for all contributors.
+This Code of Conduct exists to ensure **SDN-FlexShield: Sentinel** remains a constructive, professional, and inclusive environment for all contributors.
