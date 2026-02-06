@@ -15,7 +15,7 @@
 
 The extension focuses on **early phishing risk detection** and delivers interpretable security warnings (XAI - Explainable AI) to support safer online behavior. Unlike blacklist-based or opaque detection tools, Sentinel emphasizes transparency, explainability, and privacy-by-design.
 
-### 🎯 Design Goals
+### Design Goals
 | Goal                      | Description   |
 | :---                      | :---          |
 | **Explainable Security**  | Provides clear, human-readable risk indicators so users understand *why* a site is risky. |
@@ -47,7 +47,7 @@ We adhere to the **Principle of Least Privilege**.
 | Analyzes URLs locally within the browser instance.      | ❌ Collect browsing history.                     |
 | Displays security indicators in real-time.              | ❌ Store, transmit, or sell user data.           |
 | Optionally resolves DNS via public DoH (DNS-over-HTTPS).| ❌ Track user behavior or analytics.             |
-|                                                         | ❌ Communicate with proprietary backend servers. |
+| Fully auditable client-side logic                       | ❌ Communicate with proprietary backend servers. |
 
 > **Security Note:** No user data ever leaves the browser environment. All logic is transparent and auditable.
 
@@ -68,7 +68,7 @@ We adhere to the **Principle of Least Privilege**.
 * Pin **SDN-FlexShield: Sentinel** for quick access.
 * Visit any website to see the analysis in action.
 
-### Screenshot
+### Interface Preview
 
 ![SDN-FlexShield-Sentinel Interface](assets/images/giaodien.png)
 
@@ -82,7 +82,7 @@ Sentinel is the proactive client-side layer of the SDN-FlexShield Defender ecosy
 | **Sentinel**       | User-side monitoring, alerting & awareness plugin.                   |
 | **Console**        | Desktop application for SOC operations and administration.           |
 | **Enforcer**       | Router / SDN Controller enforcement module.                          |
-| **Core / AegisAI** | Central backend with AI-driven analysis and prediction.              |
+| **Core (AegisAI)** | Central backend with AI-driven analysis and prediction.              |
 | **HoneyCore**      | Honeynet and deception environment for threat intelligence.          |
 
 ---
@@ -112,7 +112,7 @@ This work is grounded in peer-reviewed research and global cybersecurity standar
 - **Phuong Hoang Nguyen**  
 - **Thang Quyet Le**
 
-**License:** Distributed under the **MIT License**.
+**License**: MIT License
 
 ---
 
