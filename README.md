@@ -11,7 +11,9 @@
 
 ## Overview
 
-**SDN-FlexShield: Sentinel** is an open-source browser extension designed to improve user cybersecurity awareness by providing explainable phishing warnings directly on the client side. Instead of simply flagging suspicious websites, the system explains why a warning is triggered using interpretable security indicators, helping users better understand online risks and make safer decisions.
+**SDN-FlexShield: Sentinel** is an open-source browser extension that improves user cybersecurity awareness through explainable, client-side phishing detection.
+
+The system analyzes web content locally using interpretable security indicators and transparent risk scoring. Instead of only flagging suspicious websites, it explains why a warning is triggered, helping users understand online threats, preserve privacy, and make safer browsing decisions.
 
 ### Design Goals
 | Goal                      | Description   |
